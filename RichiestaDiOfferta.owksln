@@ -1,0 +1,836 @@
+﻿<SolutionFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <CurrentPlanName>lblab1</CurrentPlanName>
+  <Description i:nil="true" />
+  <EditorVersion>16</EditorVersion>
+  <Id>8935d96c-75f5-47e6-bb34-539c45a024e1</Id>
+  <Name>RichiestaDiOfferta</Name>
+  <References>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Richiesta_Data</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AddressReference</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Personal_Identity</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Dipendenti</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>RichisestaOfferta</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>LegalInfo</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>TaxInfo</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Organization_Identity</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Clienti</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Administrator</Name>
+      <ResourceId i:nil="true" />
+      <Type>Group</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>PowerUsers</Name>
+      <ResourceId i:nil="true" />
+      <Type>Group</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Users</Name>
+      <ResourceId i:nil="true" />
+      <Type>Group</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Users_C</Name>
+      <ResourceId i:nil="true" />
+      <Type>AclModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Incarico_Assignment</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Ruoli</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>UnitaOrganizzativa_Unit</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AreeOrganizzative</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>PosizioneOrganizzativa_Position</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>PosizioniOrganizzative</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AssignIncarico</Name>
+      <ResourceId i:nil="true" />
+      <Type>Catalog</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>PositionOrganization</Name>
+      <ResourceId i:nil="true" />
+      <Type>Catalog</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Administrators</Name>
+      <ResourceId i:nil="true" />
+      <Type>Identity</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Automation</Name>
+      <ResourceId />
+      <Type>Identity</Type>
+      <Url />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Users_T</Name>
+      <ResourceId i:nil="true" />
+      <Type>AclModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ElencoClienti</Name>
+      <ResourceId i:nil="true" />
+      <Type>Catalog</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>EngineeringOfferRichiesta_HT</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Richieste</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ForwardingOfferRequest</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>QualityOfferRichiesta_HT</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>LogisticsOfferRichiesta_HT</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalOfferEngineering</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalOfferQuality</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalOfferLogistics</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AssignOfferStaff</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Atts Info</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Headers</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>InitializeAttachmentInfo</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>MailMessage</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>SendMailMessage</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>RichiesteCompletate</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AttivitaVerifica</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>VerificaEngineering_Data</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Archivio dati</Name>
+      <ResourceId i:nil="true" />
+      <Type>DataRepository</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>VerificaQuality_Data</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>VerificaLogistics_Data</Name>
+      <ResourceId i:nil="true" />
+      <Type>CustomTypeModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ForwardingChangeOfferRequest</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AssignNewOfferStaff</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalNewOfferEngineering</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalNewOfferLogistics</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>ApprovalNewOfferQuality</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>NoUsers_C</Name>
+      <ResourceId i:nil="true" />
+      <Type>AclModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>SubProcess_T</Name>
+      <ResourceId i:nil="true" />
+      <Type>AclModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>RichisestaOffertaCompletate</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>RichisestaOffertaInviate</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AlertOfferRequest</Name>
+      <ResourceId i:nil="true" />
+      <Type>ProcessModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>RichiesteGenerali</Name>
+      <ResourceId i:nil="true" />
+      <Type>CatalogModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>Automation_C</Name>
+      <ResourceId i:nil="true" />
+      <Type>AclModel</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AliasTemplate</Name>
+      <ResourceId i:nil="true" />
+      <Type>DocumentProcessingTemplate</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+    <AliasDefinitionStore>
+      <Description i:nil="true" />
+      <Name>AliasHT</Name>
+      <ResourceId i:nil="true" />
+      <Type>Catalog</Type>
+      <Url i:nil="true" />
+    </AliasDefinitionStore>
+  </References>
+  <DeployPlans>
+    <DeployPlanFile>
+      <Configurations>
+        <ConfigurationStore>
+          <ConfigurationName>lblab1</ConfigurationName>
+          <Enable>true</Enable>
+          <ReconciliationList>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Group</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Group/DB9DF29A7B464EEF8751A6A500E8A453</Url>
+                <Name>OfferRequest-Administrator</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>Administrator</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Group</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Group/7F50AB0420494798812BA6A500E94144</Url>
+                <Name>OfferRequest-PowerUsers</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>PowerUsers</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Group</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Group/7C80F4F793424EBCAD7FA6A500EA12FD</Url>
+                <Name>OfferRquest-Users</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>Users</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Catalog</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/IdentityCatalog?modelUrl=%2F4E077C152AD6400E808DA67300F6F808%2FModel%2F082C63CDDD3842E2B26BA6A400DE1B50</Url>
+                <Name>Dipendenti</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>AssignIncarico</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Catalog</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/OrganizationCatalog?modelUrl=%2F4E077C152AD6400E808DA67300F6F808%2FModel%2FB170C7E1B9194DB1A30DA6A5011C0668</Url>
+                <Name>Posizioni organizzative</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>PositionOrganization</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Identity</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Identity/6E7190EEF12F4DB6BFD3A67300F7006A</Url>
+                <Name>lblab1 Administrator</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Identity</Type>
+                <Url i:nil="true" />
+                <Name>Administrators</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Catalog</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/IdentityCatalog?modelUrl=%2F4E077C152AD6400E808DA67300F6F808%2FModel%2FBAEA72192BC4481CA09FA6A400F4C00B</Url>
+                <Name>Clienti</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>ElencoClienti</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference>
+                <Type>DataRepository</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/DataRepository</Url>
+                <Name>lblab1-Data</Name>
+              </DestinationReference>
+              <SourceReference>
+                <Type>DataRepository</Type>
+                <Url i:nil="true" />
+                <Name>Archivio dati</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Identity</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Identity/BEEFB4D5EF0644FC96BEA67300F7009D</Url>
+                <Name>lblab1 Automation</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Identity</Type>
+                <Url />
+                <Name>Automation</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>DocumentProcessingTemplate</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/Template/3BD4924599C0492B979DA6F700F0B3D6</Url>
+                <Name>TemplateLabel</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>DocumentProcessingTemplate</Type>
+                <Url i:nil="true" />
+                <Name>AliasTemplate</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:type="ConceptReference">
+                <Type>Catalog</Type>
+                <Url>/4E077C152AD6400E808DA67300F6F808/HumanTaskAdministrationCatalog?modelUrl=HumanTaskAdministrationCatalog</Url>
+                <Name>Attività (amministrazione)</Name>
+                <Description />
+              </DestinationReference>
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>AliasHT</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+          </ReconciliationList>
+          <RepositoryLocations>
+            <NamedReference>
+              <Type>DocumentRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/DocumentRepository</Url>
+              <Name>lblab1-Document</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>DocumentProcessingRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/DocumentProcessingRepository</Url>
+              <Name>lblab1-DocumentProcessing</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ModelRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/ModelRepository</Url>
+              <Name>lblab1-Model</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ProcessRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/ProcessRepository</Url>
+              <Name>lblab1-Process</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>DataRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/DataRepository</Url>
+              <Name>lblab1-Data</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ServiceRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/ServiceRepository</Url>
+              <Name>lblab1-Service</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>OrganizationRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/OrganizationRepository</Url>
+              <Name>lblab1-Organization</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>HumanTaskRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/HumanTaskRepository</Url>
+              <Name>lblab1-HumanTask</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>IdentityRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/IdentityRepository</Url>
+              <Name>lblab1</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>GroupRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/GroupRepository</Url>
+              <Name>lblab1-Group</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ExternalDataRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/ExternalDataRepository</Url>
+              <Name>lblab1-ExternalData</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>EventRepository</Type>
+              <Url>/4E077C152AD6400E808DA67300F6F808/EventRepository</Url>
+              <Name>lblab1-Event</Name>
+            </NamedReference>
+          </RepositoryLocations>
+        </ConfigurationStore>
+      </Configurations>
+      <ConfigurationsUrl xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:KeyValueOfstringstring>
+          <d4p1:Key>lblab1</d4p1:Key>
+          <d4p1:Value>/Tenant/4E077C152AD6400E808DA67300F6F808</d4p1:Value>
+        </d4p1:KeyValueOfstringstring>
+      </ConfigurationsUrl>
+      <Connection>
+        <Type>Undefined</Type>
+        <Url>https://paas.jamio.com/gateway</Url>
+        <Name>lblab1</Name>
+      </Connection>
+      <DefaultRepository>
+        <Type>ModelRepository</Type>
+        <Url>/4E077C152AD6400E808DA67300F6F808/ModelRepository</Url>
+        <Name>lblab1-Model</Name>
+      </DefaultRepository>
+      <Name>lblab1</Name>
+    </DeployPlanFile>
+    <DeployPlanFile>
+      <Configurations>
+        <ConfigurationStore>
+          <ConfigurationName>Broxtools</ConfigurationName>
+          <Enable>true</Enable>
+          <ReconciliationList>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>Administrator</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>PowerUsers</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Group</Type>
+                <Url i:nil="true" />
+                <Name>Users</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>AssignIncarico</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>PositionOrganization</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Identity</Type>
+                <Url i:nil="true" />
+                <Name>Administrators</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>ElencoClienti</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference>
+                <Type>DataRepository</Type>
+                <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/DataRepository</Url>
+                <Name>Broxtools-Data</Name>
+              </DestinationReference>
+              <SourceReference>
+                <Type>DataRepository</Type>
+                <Url i:nil="true" />
+                <Name>Archivio dati</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Identity</Type>
+                <Url />
+                <Name>Automation</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>DocumentProcessingTemplate</Type>
+                <Url i:nil="true" />
+                <Name>AliasTemplate</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+            <ReconciliationInstruction>
+              <DestinationReference i:nil="true" />
+              <SourceReference>
+                <Type>Catalog</Type>
+                <Url i:nil="true" />
+                <Name>AliasHT</Name>
+              </SourceReference>
+            </ReconciliationInstruction>
+          </ReconciliationList>
+          <RepositoryLocations>
+            <NamedReference>
+              <Type>EventRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/EventRepository</Url>
+              <Name>Broxtools-Event</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>OrganizationRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/OrganizationRepository</Url>
+              <Name>Broxtools-Organization</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ExternalDataRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/ExternalDataRepository</Url>
+              <Name>Broxtools-ExternalData</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ServiceRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/ServiceRepository</Url>
+              <Name>Broxtools-Service</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>IdentityRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/IdentityRepository</Url>
+              <Name>Broxtools</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>GroupRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/GroupRepository</Url>
+              <Name>Broxtools-Group</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ModelRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/ModelRepository</Url>
+              <Name>Broxtools-Model</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>DocumentRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/DocumentRepository</Url>
+              <Name>Broxtools-Document</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>DocumentProcessingRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/DocumentProcessingRepository</Url>
+              <Name>Broxtools-DocumentProcessing</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>DataRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/DataRepository</Url>
+              <Name>Broxtools-Data</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>ProcessRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/ProcessRepository</Url>
+              <Name>Broxtools-Process</Name>
+            </NamedReference>
+            <NamedReference>
+              <Type>HumanTaskRepository</Type>
+              <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/HumanTaskRepository</Url>
+              <Name>Broxtools-HumanTask</Name>
+            </NamedReference>
+          </RepositoryLocations>
+        </ConfigurationStore>
+      </Configurations>
+      <ConfigurationsUrl xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:KeyValueOfstringstring>
+          <d4p1:Key>Broxtools</d4p1:Key>
+          <d4p1:Value>/Tenant/D9CEB6E11B294DC5AFCBA67A00A401E2</d4p1:Value>
+        </d4p1:KeyValueOfstringstring>
+      </ConfigurationsUrl>
+      <Connection>
+        <Type>Undefined</Type>
+        <Url>https://paas.jamio.com/gateway</Url>
+        <Name>broxtools</Name>
+      </Connection>
+      <DefaultRepository>
+        <Type>ModelRepository</Type>
+        <Url>/D9CEB6E11B294DC5AFCBA67A00A401E2/ModelRepository</Url>
+        <Name>Broxtools-Model</Name>
+      </DefaultRepository>
+      <Name>broxtools</Name>
+    </DeployPlanFile>
+  </DeployPlans>
+</SolutionFile>

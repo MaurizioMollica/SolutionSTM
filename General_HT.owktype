@@ -1,0 +1,34 @@
+﻿<CustomTypeModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>12</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>General_HT</Name>
+  <ObjectType>CustomTypeModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <EmbeddedObjects />
+  <SeriesDefinition i:nil="true" />
+  <TypeDefinition>
+    <Dictionary />
+    <Description i:nil="true" />
+    <Name>General_HT</Name>
+    <BaseType>HumanTask</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout />
+    <Id>General_HT</Id>
+    <LayoutDefinitions />
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+  </TypeDefinition>
+  <Parameters>
+    <AuthorizationSchemaName />
+    <CategoryName>Default</CategoryName>
+    <Name>General_HT</Name>
+  </Parameters>
+</CustomTypeModel>

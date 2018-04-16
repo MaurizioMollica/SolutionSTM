@@ -1,0 +1,539 @@
+﻿<CustomTypeModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>UnitaOrganizzativa_Unit</Name>
+  <ObjectType>CustomTypeModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <EmbeddedObjects />
+  <SeriesDefinition i:nil="true" />
+  <TypeDefinition>
+    <Dictionary>
+      <Item>
+        <Key>Email</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Email</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>UnitaOrganizzativa_Unit</Name>
+    <BaseType>OrganizationalUnit</BaseType>
+    <Behaviour>
+      <Items>
+        <Item i:type="SimpleRule">
+          <Fact i:type="Assertion">
+            <Scope>All</Scope>
+            <Description i:nil="true" />
+            <Subjects>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                    <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                    <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartSimple">
+                    <Name>Name</Name>
+                    <Type i:type="InternalType">
+                      <Type>String</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                    <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                    <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartSimple">
+                    <Name>Initials</Name>
+                    <Type i:type="InternalType">
+                      <Type>String</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+            </Subjects>
+            <Predicates>
+              <AssertionPredicate>
+                <Type>External</Type>
+                <Value>False</Value>
+                <Name>Changeable</Name>
+              </AssertionPredicate>
+            </Predicates>
+          </Fact>
+        </Item>
+        <Item i:type="BinaryRule">
+          <ConditionList>
+            <Items>
+              <ConditionBase i:type="ConditionValidation">
+                <Validation>
+                  <Scope>All</Scope>
+                  <Description i:nil="true" />
+                  <Subjects>
+                    <Subject i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Email</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </Subject>
+                  </Subjects>
+                  <Complement i:nil="true" />
+                  <Predicate>
+                    <Type>NotNull</Type>
+                    <Value>True</Value>
+                  </Predicate>
+                </Validation>
+              </ConditionBase>
+            </Items>
+            <OperatorType>All</OperatorType>
+          </ConditionList>
+          <RuleSet>
+            <Items>
+              <Item i:type="SimpleRule">
+                <Fact i:type="Validation">
+                  <Scope>All</Scope>
+                  <Description i:nil="true" />
+                  <Subjects>
+                    <Subject i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Email</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </Subject>
+                  </Subjects>
+                  <Complement i:nil="true" />
+                  <Predicate>
+                    <Type>Email</Type>
+                    <Value>True</Value>
+                  </Predicate>
+                </Fact>
+              </Item>
+            </Items>
+          </RuleSet>
+          <Description i:nil="true" />
+        </Item>
+      </Items>
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>UnitaOrganizzativa_Unit</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="LayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutItems>
+            <Dictionary>
+              <Item>
+                <Key>Item1</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item1</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>117</MinWidth>
+                      <Width>703</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Nome</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>left</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartSimple">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item2</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item2</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>117</MinWidth>
+                      <Width>703</Width>
+                      <X>703</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>2</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Iniziali</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>left</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartSimple">
+                          <Name>Initials</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item3</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item3</Name>
+                  <GraphicInfo>
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>448</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>10</MinHeight>
+                      <MinWidth>10</MinWidth>
+                      <Width>1406</Width>
+                      <X>0</X>
+                      <Y>283</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>2</ColumnSpan>
+                      <Row>4</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Item3</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item4</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item4</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>235</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>170</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1406</Width>
+                      <X>0</X>
+                      <Y>48</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>2</ColumnSpan>
+                      <Row>3</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Descrizione</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>3</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextArea</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartSimple">
+                          <Name>Description</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item5</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item5</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>117</MinWidth>
+                      <Width>1406</Width>
+                      <X>0</X>
+                      <Y>24</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>2</ColumnSpan>
+                      <Row>2</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Email</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>left</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>OrganizationalUnit</DefinitionBaseType>
+                          <DefinitionName>UnitaOrganizzativa_Unit</DefinitionName>
+                          <DefinitionReference>UnitaOrganizzativa_Unit</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Email</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutItems>
+          <RootGraphicInfo>
+            <AbsoluteLayoutInfo>
+              <CustomSize>false</CustomSize>
+              <Height>751</Height>
+              <MaxHeight>0</MaxHeight>
+              <MaxWidth>0</MaxWidth>
+              <MinHeight>248</MinHeight>
+              <MinWidth>254</MinWidth>
+              <Width>1426</Width>
+              <X>0</X>
+              <Y>0</Y>
+            </AbsoluteLayoutInfo>
+            <AdditionalGraphicInfos />
+            <ParentName />
+            <TableCellInfo>
+              <Column>1</Column>
+              <ColumnSpan>1</ColumnSpan>
+              <Row>1</Row>
+              <RowSpan>1</RowSpan>
+            </TableCellInfo>
+            <TextInfo>
+              <Text>
+                <Default>Root</Default>
+                <Others />
+              </Text>
+              <TextDistance>0</TextDistance>
+              <TextLocation>top</TextLocation>
+              <TextVisible>false</TextVisible>
+            </TextInfo>
+            <TabbedInfo i:nil="true" />
+            <TableInfo>
+              <Columns>
+                <TableLayoutSegment>
+                  <Size>703</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+                <TableLayoutSegment>
+                  <Size>703</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+              </Columns>
+              <Rows>
+                <TableLayoutSegment>
+                  <Size>24</Size>
+                  <SizeType>Default</SizeType>
+                </TableLayoutSegment>
+                <TableLayoutSegment>
+                  <Size>24</Size>
+                  <SizeType>Default</SizeType>
+                </TableLayoutSegment>
+                <TableLayoutSegment>
+                  <Size>235</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+                <TableLayoutSegment>
+                  <Size>448</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+              </Rows>
+            </TableInfo>
+          </RootGraphicInfo>
+          <HideAttachments>false</HideAttachments>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+  </TypeDefinition>
+  <Parameters>
+    <AuthorizationSchemaName />
+    <CategoryName>Default</CategoryName>
+    <Name>UnitaOrganizzativa_Unit</Name>
+  </Parameters>
+</CustomTypeModel>

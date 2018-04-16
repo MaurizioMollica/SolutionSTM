@@ -1,0 +1,282 @@
+﻿<CatalogModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>AttivitaVerifica</Name>
+  <ObjectType>CatalogModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <CatalogDefinition>
+    <Dictionary>
+      <Item>
+        <Key>RichiestaReference</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>RichiestaReference</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Name</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>AttivitaVerifica</Name>
+    <BaseType>ExtendedReference</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>AttivitaVerifica</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="CatalogLayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutColumns>
+            <Dictionary>
+              <Item>
+                <Key>RichiestaReference</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>RichiestaReference</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Richiesta</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>AttivitaVerifica</DefinitionName>
+                          <DefinitionReference>AttivitaVerifica</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>RichiestaReference</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Name</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Name</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Verifica</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>AttivitaVerifica</DefinitionName>
+                          <DefinitionReference>AttivitaVerifica</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutColumns>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+    <EntityType i:type="InternalType">
+      <Type>Data</Type>
+    </EntityType>
+    <Filter i:type="FilterGroup">
+      <Code i:nil="true" />
+      <Filters>
+        <FilterBase i:type="Filter">
+          <Code i:nil="true" />
+          <Complement i:type="BaseReferenceExpression">
+            <Code>VerificaEngineering_Data</Code>
+            <Description />
+          </Complement>
+          <Predicate>
+            <Type>CustomizationIs</Type>
+            <Value>True</Value>
+          </Predicate>
+          <Subject i:type="TypedSubject">
+            <Code />
+            <Description i:nil="true" />
+            <RootPart i:type="SubjectPartSimple">
+              <Name>item</Name>
+              <Type i:type="InternalType">
+                <Type>Data</Type>
+              </Type>
+              <Child i:nil="true" />
+            </RootPart>
+          </Subject>
+        </FilterBase>
+        <FilterBase i:type="Filter">
+          <Code i:nil="true" />
+          <Complement i:type="BaseReferenceExpression">
+            <Code>VerificaLogistics_Data</Code>
+            <Description />
+          </Complement>
+          <Predicate>
+            <Type>CustomizationIs</Type>
+            <Value>True</Value>
+          </Predicate>
+          <Subject i:type="TypedSubject">
+            <Code />
+            <Description i:nil="true" />
+            <RootPart i:type="SubjectPartSimple">
+              <Name>item</Name>
+              <Type i:type="InternalType">
+                <Type>Data</Type>
+              </Type>
+              <Child i:nil="true" />
+            </RootPart>
+          </Subject>
+        </FilterBase>
+        <FilterBase i:type="Filter">
+          <Code i:nil="true" />
+          <Complement i:type="BaseReferenceExpression">
+            <Code>VerificaQuality_Data</Code>
+            <Description />
+          </Complement>
+          <Predicate>
+            <Type>CustomizationIs</Type>
+            <Value>True</Value>
+          </Predicate>
+          <Subject i:type="TypedSubject">
+            <Code />
+            <Description i:nil="true" />
+            <RootPart i:type="SubjectPartSimple">
+              <Name>item</Name>
+              <Type i:type="InternalType">
+                <Type>Data</Type>
+              </Type>
+              <Child i:nil="true" />
+            </RootPart>
+          </Subject>
+        </FilterBase>
+      </Filters>
+      <Operator>Or</Operator>
+    </Filter>
+    <OrderingCriteria />
+    <ProjectionMap>
+      <Item>
+        <Key>RichiestaReference</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>VerificaEngineering_Data</DefinitionName>
+              <DefinitionReference>VerificaEngineering_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>RichiestaReference</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>VerificaEngineering_Data</DefinitionName>
+              <DefinitionReference>VerificaEngineering_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Name</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+    </ProjectionMap>
+    <Version>0</Version>
+    <CustomTypeFieldDefinition />
+    <RefreshMinutes>0</RefreshMinutes>
+  </CatalogDefinition>
+  <EmbeddedObjects />
+  <Parameters>
+    <AuthorizationSchemaName>Users_C</AuthorizationSchemaName>
+    <CategoryName>Attività di verifica</CategoryName>
+    <Name>Verifiche</Name>
+  </Parameters>
+</CatalogModel>

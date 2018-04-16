@@ -1,0 +1,590 @@
+﻿<CatalogModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>12</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>Clienti</Name>
+  <ObjectType>CatalogModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <CatalogDefinition>
+    <Dictionary>
+      <Item>
+        <Key>IMG</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>The picture of the organization</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>IMG</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Name</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Email</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>Email address of the organization.</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Email</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Fax</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>Fax number of the organization.</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Fax</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>MobilePhone</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>Mobile phone number of the organization.</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>MobilePhone</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Phone</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>Phone number of the organization.</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Phone</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Website</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description>Link to the organization website.</Description>
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Website</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>Clienti</Name>
+    <BaseType>ExtendedReference</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>Clienti</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="CatalogLayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutColumns>
+            <Dictionary>
+              <Item>
+                <Key>IMG</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>IMG</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Logo</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>IMG</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Name</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Name</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Denominazione</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Email</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Email</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Email</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Email</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Fax</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Fax</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Fax</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Fax</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>MobilePhone</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>MobilePhone</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>MobilePhone</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>MobilePhone</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Phone</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Phone</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Phone</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Phone</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Website</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Website</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Website</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Clienti</DefinitionName>
+                          <DefinitionReference>Clienti</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Website</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutColumns>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+    <EntityType i:type="CustomType">
+      <DefinitionBaseType>Identity</DefinitionBaseType>
+      <DefinitionName>Organization_Identity</DefinitionName>
+      <DefinitionReference>Organization_Identity</DefinitionReference>
+    </EntityType>
+    <Filter i:nil="true" />
+    <OrderingCriteria />
+    <ProjectionMap>
+      <Item>
+        <Key>IMG</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Picture</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Name</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Email</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Email</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Fax</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Fax</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>MobilePhone</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>MobilePhone</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Phone</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Phone</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Website</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Identity</DefinitionBaseType>
+              <DefinitionName>Organization_Identity</DefinitionName>
+              <DefinitionReference>Organization_Identity</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Website</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+    </ProjectionMap>
+    <Version>0</Version>
+    <CustomTypeFieldDefinition />
+  </CatalogDefinition>
+  <EmbeddedObjects />
+  <Parameters>
+    <AuthorizationSchemaName>Users_C</AuthorizationSchemaName>
+    <CategoryName>Amministrazione</CategoryName>
+    <Name>Clienti</Name>
+  </Parameters>
+</CatalogModel>

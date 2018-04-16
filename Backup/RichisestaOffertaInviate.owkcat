@@ -1,0 +1,627 @@
+﻿<CatalogModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>12</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>RichisestaOffertaInviate</Name>
+  <ObjectType>CatalogModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <CatalogDefinition>
+    <Dictionary>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Name</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Cliente</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Cliente</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>DataScadenza</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>DataScadenza</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Datetime</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Note</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Note</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Memo</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Priorita</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Priorita</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Completata</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Completata</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Boolean</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Inviata</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <Name>Inviata</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Boolean</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>RichisestaOffertaInviate</Name>
+    <BaseType>ExtendedReference</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>RichisestaOffertaInviate</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="CatalogLayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutColumns>
+            <Dictionary>
+              <Item>
+                <Key>Name</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Name</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Oggetto</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Cliente</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Cliente</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Cliente</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Cliente</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>DataScadenza</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>DataScadenza</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos>
+                      <Item>
+                        <Key>DateTimeGraphicInfo</Key>
+                        <Val i:type="DateTimeGraphicInfo">
+                          <HideDate>false</HideDate>
+                          <HideTime>true</HideTime>
+                        </Val>
+                      </Item>
+                    </AdditionalGraphicInfos>
+                    <Caption>
+                      <Default>Data scadenza</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>DataScadenza</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Note</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Note</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Note</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Note</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Priorita</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Priorita</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Priorita</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Priorita</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Completata</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Completata</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Completata</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Completata</Name>
+                          <Type i:type="InternalType">
+                            <Type>Boolean</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Inviata</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Inviata</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Inviata</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichisestaOffertaInviate</DefinitionName>
+                          <DefinitionReference>RichisestaOffertaInviate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Inviata</Name>
+                          <Type i:type="InternalType">
+                            <Type>Boolean</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutColumns>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+    <EntityType i:type="CustomType">
+      <DefinitionBaseType>Data</DefinitionBaseType>
+      <DefinitionName>Richiesta_Data</DefinitionName>
+      <DefinitionReference>Richiesta_Data</DefinitionReference>
+    </EntityType>
+    <Filter i:type="Filter">
+      <Code i:nil="true" />
+      <Complement>
+        <Code>true</Code>
+        <Description />
+      </Complement>
+      <Predicate>
+        <Type>EqualsTo</Type>
+        <Value>True</Value>
+      </Predicate>
+      <Subject i:type="TypedSubject">
+        <Code />
+        <Description i:nil="true" />
+        <RootPart i:type="SubjectPartSimple">
+          <Name>item</Name>
+          <Type i:type="CustomType">
+            <DefinitionBaseType>Data</DefinitionBaseType>
+            <DefinitionName>Richiesta_Data</DefinitionName>
+            <DefinitionReference>Richiesta_Data</DefinitionReference>
+          </Type>
+          <Child i:type="SubjectPartCustomField">
+            <Name>Inviata</Name>
+            <Type i:type="InternalType">
+              <Type>Boolean</Type>
+            </Type>
+            <Child i:nil="true" />
+          </Child>
+        </RootPart>
+      </Subject>
+    </Filter>
+    <OrderingCriteria />
+    <ProjectionMap>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Name</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Cliente</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Cliente</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>DataScadenza</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>DataScadenza</Name>
+              <Type i:type="InternalType">
+                <Type>Datetime</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Note</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Note</Name>
+              <Type i:type="InternalType">
+                <Type>Memo</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Priorita</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Priorita</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Completata</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Completata</Name>
+              <Type i:type="InternalType">
+                <Type>Boolean</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Inviata</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Inviata</Name>
+              <Type i:type="InternalType">
+                <Type>Boolean</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+    </ProjectionMap>
+    <Version>0</Version>
+    <CustomTypeFieldDefinition />
+  </CatalogDefinition>
+  <EmbeddedObjects />
+  <Parameters>
+    <AuthorizationSchemaName>Users_C</AuthorizationSchemaName>
+    <CategoryName>Richieste</CategoryName>
+    <Name>Richiseste inviate</Name>
+  </Parameters>
+</CatalogModel>

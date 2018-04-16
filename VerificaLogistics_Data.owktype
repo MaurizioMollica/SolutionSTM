@@ -1,0 +1,1266 @@
+﻿<CustomTypeModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>VerificaLogistics_Data</Name>
+  <ObjectType>CustomTypeModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <EmbeddedObjects />
+  <SeriesDefinition>
+    <Automatic>false</Automatic>
+    <Parameters />
+  </SeriesDefinition>
+  <TypeDefinition>
+    <Dictionary>
+      <Item>
+        <Key>RichiestaReference</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>RichiestaReference</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Allegati</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>true</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Allegati</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Capability</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Capability</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Boolean</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Tooling</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Tooling</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Boolean</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>SaturationLev</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>SaturationLev</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Boolean</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>CommentoCapability</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>CommentoCapability</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Memo</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>CommentoTooling</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>CommentoTooling</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Memo</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>CommentoSaturationLev</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>CommentoSaturationLev</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Memo</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>VerificaLogistics_Data</Name>
+    <BaseType>Data</BaseType>
+    <Behaviour>
+      <Items>
+        <Item i:type="SimpleRule">
+          <Fact i:type="Assertion">
+            <Scope>All</Scope>
+            <Description i:nil="true" />
+            <Subjects>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartSimple">
+                    <Name>Name</Name>
+                    <Type i:type="InternalType">
+                      <Type>String</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomArrayField">
+                    <Name>Allegati</Name>
+                    <Type i:type="InternalType">
+                      <Type>Reference</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>Capability</Name>
+                    <Type i:type="InternalType">
+                      <Type>Boolean</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>CommentoCapability</Name>
+                    <Type i:type="InternalType">
+                      <Type>Memo</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>CommentoSaturationLev</Name>
+                    <Type i:type="InternalType">
+                      <Type>Memo</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>CommentoTooling</Name>
+                    <Type i:type="InternalType">
+                      <Type>Memo</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>SaturationLev</Name>
+                    <Type i:type="InternalType">
+                      <Type>Boolean</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description i:nil="true" />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>data</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                    <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>Tooling</Name>
+                    <Type i:type="InternalType">
+                      <Type>Boolean</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </RootPart>
+              </Subject>
+            </Subjects>
+            <Predicates>
+              <AssertionPredicate>
+                <Type>External</Type>
+                <Value>False</Value>
+                <Name>Changeable</Name>
+              </AssertionPredicate>
+            </Predicates>
+          </Fact>
+        </Item>
+      </Items>
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>VerificaLogistics_Data</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="LayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutItems>
+            <Dictionary>
+              <Item>
+                <Key>Item1</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item1</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>490</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>154</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos>
+                      <Item>
+                        <Key>ReferenceGraphicInfo</Key>
+                        <Val i:type="ReferenceGraphicInfo">
+                          <HideCatalog>false</HideCatalog>
+                          <HideFiles>true</HideFiles>
+                          <HideLink>false</HideLink>
+                          <HideNew>true</HideNew>
+                          <HideName>false</HideName>
+                          <HideAttachments>false</HideAttachments>
+                          <HideNavigation>false</HideNavigation>
+                          <HideFavorites>false</HideFavorites>
+                        </Val>
+                      </Item>
+                    </AdditionalGraphicInfos>
+                    <ParentName>Item9</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Allegati</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                    <ControlType>ReferenceList</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>Allegati</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item2</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item2</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>187</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>170</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>24</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>2</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Commento</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>3</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextArea</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>CommentoCapability</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item3</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item3</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>188</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>170</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>246</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>5</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Commento</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>3</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextArea</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>CommentoTooling</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item5</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item5</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>191</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>170</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>469</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>8</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Commento </Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>3</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>TextArea</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>CommentoSaturationLev</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item6</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item6</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>104</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Capability</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>CheckBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Capability</Name>
+                          <Type i:type="InternalType">
+                            <Type>Boolean</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item7</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item7</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>104</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>222</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>4</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Tooling</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>CheckBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Tooling</Name>
+                          <Type i:type="InternalType">
+                            <Type>Boolean</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item10</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item10</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>104</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>445</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>7</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Saturation Lev.</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>4</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <ControlType>CheckBox</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>SaturationLev</Name>
+                          <Type i:type="InternalType">
+                            <Type>Boolean</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item11</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item11</Name>
+                  <GraphicInfo i:type="ControlGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>24</Height>
+                      <MaxHeight>24</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>24</MinHeight>
+                      <MinWidth>54</MinWidth>
+                      <Width>1401</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Name</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                    <ControlType>Label</ControlType>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Data</DefinitionBaseType>
+                          <DefinitionName>VerificaLogistics_Data</DefinitionName>
+                          <DefinitionReference>VerificaLogistics_Data</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartSimple">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item12</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item12</Name>
+                  <GraphicInfo>
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>170</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>10</MinHeight>
+                      <MinWidth>10</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>490</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item9</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>2</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Item12</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item13</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item13</Name>
+                  <GraphicInfo>
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>11</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>10</MinHeight>
+                      <MinWidth>10</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>211</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>3</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Item13</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item14</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item14</Name>
+                  <GraphicInfo>
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>11</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>10</MinHeight>
+                      <MinWidth>10</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>434</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item4</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>6</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Item14</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>default</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item4</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item4</Name>
+                  <GraphicInfo i:type="GroupGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>660</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>602</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item8</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>-1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>-1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Info</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <TabbedInfo>
+                      <Index>0</Index>
+                    </TabbedInfo>
+                    <TableInfo>
+                      <Columns>
+                        <TableLayoutSegment>
+                          <Size>1377</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                      </Columns>
+                      <Rows>
+                        <TableLayoutSegment>
+                          <Size>24</Size>
+                          <SizeType>Default</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>187</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>11</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>24</Size>
+                          <SizeType>Default</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>188</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>11</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>24</Size>
+                          <SizeType>Default</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>191</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                      </Rows>
+                    </TableInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item8</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item8</Name>
+                  <GraphicInfo i:type="TabbedGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>707</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>649</MinHeight>
+                      <MinWidth>178</MinWidth>
+                      <Width>1401</Width>
+                      <X>0</X>
+                      <Y>24</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName />
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>1</ColumnSpan>
+                      <Row>2</Row>
+                      <RowSpan>1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Item8</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>false</TextVisible>
+                    </TextInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Item9</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Item9</Name>
+                  <GraphicInfo i:type="GroupGraphicInfo">
+                    <AbsoluteLayoutInfo>
+                      <CustomSize>false</CustomSize>
+                      <Height>660</Height>
+                      <MaxHeight>0</MaxHeight>
+                      <MaxWidth>0</MaxWidth>
+                      <MinHeight>164</MinHeight>
+                      <MinWidth>154</MinWidth>
+                      <Width>1377</Width>
+                      <X>0</X>
+                      <Y>0</Y>
+                    </AbsoluteLayoutInfo>
+                    <AdditionalGraphicInfos />
+                    <ParentName>Item8</ParentName>
+                    <TableCellInfo>
+                      <Column>1</Column>
+                      <ColumnSpan>-1</ColumnSpan>
+                      <Row>1</Row>
+                      <RowSpan>-1</RowSpan>
+                    </TableCellInfo>
+                    <TextInfo>
+                      <Text>
+                        <Default>Allegati</Default>
+                        <Others />
+                      </Text>
+                      <TextDistance>0</TextDistance>
+                      <TextLocation>top</TextLocation>
+                      <TextVisible>true</TextVisible>
+                    </TextInfo>
+                    <TabbedInfo>
+                      <Index>1</Index>
+                    </TabbedInfo>
+                    <TableInfo>
+                      <Columns>
+                        <TableLayoutSegment>
+                          <Size>1377</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                      </Columns>
+                      <Rows>
+                        <TableLayoutSegment>
+                          <Size>490</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                        <TableLayoutSegment>
+                          <Size>170</Size>
+                          <SizeType>Percentage</SizeType>
+                        </TableLayoutSegment>
+                      </Rows>
+                    </TableInfo>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:nil="true" />
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutItems>
+          <RootGraphicInfo>
+            <AbsoluteLayoutInfo>
+              <CustomSize>false</CustomSize>
+              <Height>751</Height>
+              <MaxHeight>0</MaxHeight>
+              <MaxWidth>0</MaxWidth>
+              <MinHeight>693</MinHeight>
+              <MinWidth>198</MinWidth>
+              <Width>1421</Width>
+              <X>0</X>
+              <Y>0</Y>
+            </AbsoluteLayoutInfo>
+            <AdditionalGraphicInfos />
+            <ParentName />
+            <TableCellInfo>
+              <Column>1</Column>
+              <ColumnSpan>1</ColumnSpan>
+              <Row>1</Row>
+              <RowSpan>1</RowSpan>
+            </TableCellInfo>
+            <TextInfo>
+              <Text>
+                <Default>Root</Default>
+                <Others />
+              </Text>
+              <TextDistance>0</TextDistance>
+              <TextLocation>top</TextLocation>
+              <TextVisible>false</TextVisible>
+            </TextInfo>
+            <TabbedInfo i:nil="true" />
+            <TableInfo>
+              <Columns>
+                <TableLayoutSegment>
+                  <Size>1401</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+              </Columns>
+              <Rows>
+                <TableLayoutSegment>
+                  <Size>24</Size>
+                  <SizeType>Default</SizeType>
+                </TableLayoutSegment>
+                <TableLayoutSegment>
+                  <Size>707</Size>
+                  <SizeType>Percentage</SizeType>
+                </TableLayoutSegment>
+              </Rows>
+            </TableInfo>
+          </RootGraphicInfo>
+          <HideAttachments>false</HideAttachments>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Layout1</Key>
+        <Val i:type="LayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout1</Name>
+          <TagList i:nil="true" />
+          <LayoutItems>
+            <Dictionary />
+          </LayoutItems>
+          <RootGraphicInfo>
+            <AbsoluteLayoutInfo>
+              <CustomSize>false</CustomSize>
+              <Height>751</Height>
+              <MaxHeight>0</MaxHeight>
+              <MaxWidth>0</MaxWidth>
+              <MinHeight>20</MinHeight>
+              <MinWidth>20</MinWidth>
+              <Width>1421</Width>
+              <X>0</X>
+              <Y>0</Y>
+            </AbsoluteLayoutInfo>
+            <AdditionalGraphicInfos />
+            <ParentName />
+            <TableCellInfo>
+              <Column>1</Column>
+              <ColumnSpan>1</ColumnSpan>
+              <Row>1</Row>
+              <RowSpan>1</RowSpan>
+            </TableCellInfo>
+            <TextInfo>
+              <Text>
+                <Default>Root</Default>
+                <Others />
+              </Text>
+              <TextDistance>0</TextDistance>
+              <TextLocation>top</TextLocation>
+              <TextVisible>false</TextVisible>
+            </TextInfo>
+            <TabbedInfo i:nil="true" />
+            <TableInfo>
+              <Columns />
+              <Rows />
+            </TableInfo>
+          </RootGraphicInfo>
+          <HideAttachments>false</HideAttachments>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+  </TypeDefinition>
+  <Parameters>
+    <AuthorizationSchemaName>SubProcess_T</AuthorizationSchemaName>
+    <CategoryName>Default</CategoryName>
+    <Name>Verifica Logistics</Name>
+  </Parameters>
+</CustomTypeModel>

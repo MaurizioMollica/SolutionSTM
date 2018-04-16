@@ -1,0 +1,3136 @@
+﻿<ProcessModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id>81C878DE1970492B81A6A30000F85B6E</Id>
+  <Name>SendMailMessage</Name>
+  <ObjectType>ProcessModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <Definition>
+    <Description i:nil="true" />
+    <Id i:nil="true" />
+    <Name>SendMailMessage</Name>
+    <DataInputs>
+      <Dictionary>
+        <Item>
+          <Key>CC</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>CC</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>From</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>From</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>To</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>To</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Subject</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Subject</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>BodyText</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>BodyText</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Memo</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Bcc</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Bcc</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>ReplayTo</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>ReplayTo</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>InReplayTo</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>InReplayTo</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Headers</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Headers</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Dataset</DefinitionBaseType>
+              <DefinitionName>Headers</DefinitionName>
+              <DefinitionReference>Headers</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Atts Info</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Atts Info</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Dataset</DefinitionBaseType>
+              <DefinitionName>Atts Info</DefinitionName>
+              <DefinitionReference>Atts Info</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>BodyHtml</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>BodyHtml</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Memo</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Date</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Date</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Datetime</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>EnvelopeId</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>EnvelopeId</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>MessageId</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>MessageId</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>ReceivedDate</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>ReceivedDate</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Datetime</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Priority</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Priority</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Integer</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Atts Reference List</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Atts Reference List</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Reference</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>FileComponent</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>FileComponent</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Boolean</Type>
+            </Type>
+          </Val>
+        </Item>
+      </Dictionary>
+      <Description i:nil="true" />
+      <Name>9F39103E866E4DD2B764A49600CBDD00</Name>
+    </DataInputs>
+    <DataOutputs>
+      <Dictionary />
+      <Description i:nil="true" />
+      <Name>9A4EBEEE2CD142AB9E45A49600CBDD00</Name>
+    </DataOutputs>
+    <SupportedInterfaceReferences xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Artifacts />
+    <CorrelationSubscriptons />
+    <FlowElements xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:anyType i:type="StartEvent">
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>109616EE02D845968925A49600CBDDC0</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>D7EC4416E6714A10AF12A49600CBDDC0</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:nil="true" />
+        <Id>C09C3BF789124B5B8FDAA30000F99987</Id>
+        <Name>DEBUG|</Name>
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>817414C774E4424DBC1FA49600CBDDC0</Name>
+        </Variables>
+        <IsInterrupting>true</IsInterrupting>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="BusinessRuleTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Priority</Name>
+                  <Type i:type="InternalType">
+                    <Type>Integer</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_Priority</Name>
+                  <Type i:type="InternalType">
+                    <Type>Integer</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>From</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_From</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Subject</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_Subject</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>BodyText</Name>
+                  <Type i:type="InternalType">
+                    <Type>Memo</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_BodyText</Name>
+                  <Type i:type="InternalType">
+                    <Type>Memo</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>To</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_To</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>CC</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_CC</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Date</Name>
+                  <Type i:type="InternalType">
+                    <Type>Datetime</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_Date</Name>
+                  <Type i:type="InternalType">
+                    <Type>Datetime</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>EnvelopeId</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_EnvelopeID</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Headers</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Headers</DefinitionName>
+                    <DefinitionReference>Headers</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_Headers</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Headers</DefinitionName>
+                    <DefinitionReference>Headers</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>InReplayTo</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_InReplyTo</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>MessageId</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_MessageID</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>ReceivedDate</Name>
+                  <Type i:type="InternalType">
+                    <Type>Datetime</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_ReceivedDate</Name>
+                  <Type i:type="InternalType">
+                    <Type>Datetime</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>ReplayTo</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_ReplyTo</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Bcc</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>in_Bcc</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>BodyHtml</Name>
+                  <Type i:type="InternalType">
+                    <Type>Memo</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                  <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>in_BodyHTML</Name>
+                  <Type i:type="InternalType">
+                    <Type>Memo</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>in_Priority</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_Priority</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Integer</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_From</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_From</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_Subject</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_Subject</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_BodyText</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_BodyText</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Memo</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_To</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_To</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_CC</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_CC</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_Date</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_Date</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Datetime</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_EnvelopeID</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_EnvelopeID</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_Headers</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_Headers</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>Headers</DefinitionName>
+                  <DefinitionReference>Headers</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_InReplyTo</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_InReplyTo</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_MessageID</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_MessageID</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_ReceivedDate</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_ReceivedDate</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Datetime</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_ReplyTo</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_ReplyTo</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_Bcc</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_Bcc</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>in_BodyHTML</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>in_BodyHTML</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Memo</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>B2CDA910C2134C249EC0A49600CBDD00</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                  <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>outMailMessage</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>MailMessage</DefinitionName>
+                    <DefinitionReference>MailMessage</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>MailMessage</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>MailMessage</DefinitionName>
+                    <DefinitionReference>MailMessage</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>outMailMessage</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>outMailMessage</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>MailMessage</DefinitionName>
+                  <DefinitionReference>MailMessage</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>76D9AFB71E3F4C6B9019A49600CBDD00</Name>
+        </DataOutputs>
+        <Description />
+        <Id>EDD1D2B18D30495CB57EA30000F9B5AB</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>Set Mail Info</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>D3E40607CA6B4262BB22A49600CBDDC0</Name>
+        </Variables>
+        <Implementation>
+          <Items>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:nil="true" />
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right>
+                  <Code>New(Dataset)</Code>
+                  <Description />
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>Bcc</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_Bcc</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>BodyHtml</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_BodyHTML</Name>
+                      <Type i:type="InternalType">
+                        <Type>Memo</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Priority</Name>
+                          <Type i:type="InternalType">
+                            <Type>Integer</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_Priority</Name>
+                      <Type i:type="InternalType">
+                        <Type>Integer</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>CC</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_CC</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>BodyText</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_BodyText</Name>
+                      <Type i:type="InternalType">
+                        <Type>Memo</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>From</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_From</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Subject</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_Subject</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>To</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_To</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Date</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_Date</Name>
+                      <Type i:type="InternalType">
+                        <Type>Datetime</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>EnvelopeId</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_EnvelopeID</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>Headers</Name>
+                          <Type i:type="CustomType">
+                            <DefinitionBaseType>Dataset</DefinitionBaseType>
+                            <DefinitionName>Headers</DefinitionName>
+                            <DefinitionReference>Headers</DefinitionReference>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_Headers</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>Headers</DefinitionName>
+                        <DefinitionReference>Headers</DefinitionReference>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>InReplyTo</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_InReplyTo</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>MessageId</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_MessageID</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>ReceivedDate</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>in_ReceivedDate</Name>
+                      <Type i:type="InternalType">
+                        <Type>Datetime</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionName>
+                        <DefinitionReference>76D9AFB71E3F4C6B9019A49600CBDD00</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>outMailMessage</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>Dataset</DefinitionBaseType>
+                          <DefinitionName>MailMessage</DefinitionName>
+                          <DefinitionReference>MailMessage</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomArrayField">
+                          <Name>ReplyTo</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right i:type="TypedSubject">
+                  <Code />
+                  <Description />
+                  <RootPart i:type="SubjectPartSimple">
+                    <Name>activityInput</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Dataset</DefinitionBaseType>
+                      <DefinitionName>B2CDA910C2134C249EC0A49600CBDD00</DefinitionName>
+                      <DefinitionReference>B2CDA910C2134C249EC0A49600CBDD00</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomArrayField">
+                      <Name>in_ReplyTo</Name>
+                      <Type i:type="InternalType">
+                        <Type>String</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </RootPart>
+                </Right>
+              </Fact>
+            </Item>
+          </Items>
+          <Description i:nil="true" />
+          <Name i:nil="true" />
+        </Implementation>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ServiceTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>MailMessage</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>MailMessage</DefinitionName>
+                    <DefinitionReference>MailMessage</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionName>
+                  <DefinitionReference>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>mailMessage</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>MailMessage</DefinitionName>
+                    <DefinitionReference>MailMessage</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Atts Info</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Atts Info</DefinitionName>
+                    <DefinitionReference>Atts Info</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionName>
+                  <DefinitionReference>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>attachmentInfos</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Atts Info</DefinitionName>
+                    <DefinitionReference>Atts Info</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Atts Stream List</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionName>
+                  <DefinitionReference>EE7054F6C67E4BBA933FA49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>attachmentStreams</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>mailMessage</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>mailMessage</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>MailMessage</DefinitionName>
+                  <DefinitionReference>MailMessage</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>attachmentInfos</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>attachmentInfos</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>Atts Info</DefinitionName>
+                  <DefinitionReference>Atts Info</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>attachmentStreams</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>attachmentStreams</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>EE7054F6C67E4BBA933FA49600CBDD00</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>9A527E1DDD4345ECAB80A49600CBDD00</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <Id>F49E97A7B2284E409876A30000F9BCF0</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>Send Mail</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>C0904A1F696F47409C1DA49600CBDDC5</Name>
+        </Variables>
+        <OperationReference>
+          <Type>Undefined</Type>
+          <Url>Mail/SMTP_SendMessage_S</Url>
+          <Name />
+        </OperationReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="EndEvent">
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>CA0FB94B88CB437EAEB2A49600CBDDC5</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>1BE15F21161548308900A49600CBDDC5</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:nil="true" />
+        <Id>0DB04BC876EF45A79A94A30000F9CE9C</Id>
+        <Name i:nil="true" />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>09013BEE3971464A9715A49600CBDDC5</Name>
+        </Variables>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="CallActivity">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>#processInput.Fields['Atts Reference List'][#activity.LoopCounter]</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionName>
+                  <DefinitionReference>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Atts Reference</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9F39103E866E4DD2B764A49600CBDD00</DefinitionName>
+                  <DefinitionReference>9F39103E866E4DD2B764A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Atts Info</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Atts Info</DefinitionName>
+                    <DefinitionReference>Atts Info</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionName>
+                  <DefinitionReference>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Atts Info</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Atts Info</DefinitionName>
+                    <DefinitionReference>Atts Info</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activity</Name>
+                <Type i:type="InternalType">
+                  <Type>CallActivityContext</Type>
+                </Type>
+                <Child i:type="SubjectPartSimple">
+                  <Name>LoopCounter</Name>
+                  <Type i:type="InternalType">
+                    <Type>Integer</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionName>
+                  <DefinitionReference>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>LoopCounter</Name>
+                  <Type i:type="InternalType">
+                    <Type>Integer</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>false</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionName>
+                  <DefinitionReference>3719EA85FA6D4BEE89D2A49600FACD3E</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>FileComponent</Name>
+                  <Type i:type="InternalType">
+                    <Type>Boolean</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>Atts Reference</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>Atts Reference</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>Atts Info</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>Atts Info</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>Atts Info</DefinitionName>
+                  <DefinitionReference>Atts Info</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>LoopCounter</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>LoopCounter</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Integer</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>FileComponent</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>FileComponent</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Boolean</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>3719EA85FA6D4BEE89D2A49600FACD3E</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>SetInList(#processVariables.Fields['Atts Stream List'],#activity.LoopCounter,#activityOutput.Fields['Att Stream'])</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Atts Stream List</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>SetInList(#processVariables.Fields['Atts Info'],#activity.LoopCounter,#activityOutput.Fields['Att Info'])</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>FE826979B77B4A10AE47A49600CBDD00</DefinitionName>
+                  <DefinitionReference>FE826979B77B4A10AE47A49600CBDD00</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>Atts Info</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>Atts Info</DefinitionName>
+                    <DefinitionReference>Atts Info</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>Att Stream</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>Att Stream</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>Att Info</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <IsUpgradable>false</IsUpgradable>
+                <Name>Att Info</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>Atts Info</DefinitionName>
+                  <DefinitionReference>Atts Info</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>2335111F234945E29308A49600FACD3E</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <Id>5464ADA2E62740BCBF2EA49600FAA943</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:type="MultiInstanceLoopCharacteristcs">
+          <AllBehaviourEvent i:nil="true" />
+          <Behaviour>None</Behaviour>
+          <CompletionCondition i:nil="true" />
+          <ComplexBehaviorDefinition i:nil="true" />
+          <IsSequential>true</IsSequential>
+          <LoopCardinality>
+            <Code>#processInput.Fields['Atts Reference List'].Count</Code>
+            <Description />
+          </LoopCardinality>
+          <OneBehaviourEvent i:nil="true" />
+        </LoopCharacteristics>
+        <Name>Initialize Attachments</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>92C30D5BCDA14C01B6C8A49600FAA943</Name>
+        </Variables>
+        <CallableElementReference>InitializeAttachmentInfo</CallableElementReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>04FA352DA0664AE09342A30000F9DCBA</Id>
+        <Name i:nil="true" />
+        <SourceId>EDD1D2B18D30495CB57EA30000F9B5AB</SourceId>
+        <TargetId>F49E97A7B2284E409876A30000F9BCF0</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>8895D0852D6447CD8BFCA30000F9E1B5</Id>
+        <Name i:nil="true" />
+        <SourceId>F49E97A7B2284E409876A30000F9BCF0</SourceId>
+        <TargetId>0DB04BC876EF45A79A94A30000F9CE9C</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>D8F9F078EC38436B8FE3A49600F94040</Id>
+        <Name i:nil="true" />
+        <SourceId>5464ADA2E62740BCBF2EA49600FAA943</SourceId>
+        <TargetId>EDD1D2B18D30495CB57EA30000F9B5AB</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>8D861E1FFECE43CBB5C7A49900AE929A</Id>
+        <Name i:nil="true" />
+        <SourceId>C09C3BF789124B5B8FDAA30000F99987</SourceId>
+        <TargetId>5464ADA2E62740BCBF2EA49600FAA943</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+    </FlowElements>
+    <IsExecutable>true</IsExecutable>
+    <LaneSets />
+    <Resources />
+    <Variables>
+      <Dictionary>
+        <Item>
+          <Key>Atts Stream List</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Atts Stream List</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Reference</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Atts Info</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>Atts Info</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Dataset</DefinitionBaseType>
+              <DefinitionName>Atts Info</DefinitionName>
+              <DefinitionReference>Atts Info</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>MailMessage</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <IsUpgradable>false</IsUpgradable>
+            <Name>MailMessage</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Dataset</DefinitionBaseType>
+              <DefinitionName>MailMessage</DefinitionName>
+              <DefinitionReference>MailMessage</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+      </Dictionary>
+      <Description i:nil="true" />
+      <Name>FE826979B77B4A10AE47A49600CBDD00</Name>
+    </Variables>
+  </Definition>
+  <EmbeddedObjects />
+  <GraphicInformations>
+    <Globals />
+    <Planes>
+      <Item>
+        <Key>Default</Key>
+        <Val>
+          <GraphicInfos>
+            <Item>
+              <Key>5BD2A2BFE2994DC5B32CA30000F99987</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>C09C3BF789124B5B8FDAA30000F99987</EntityReference>
+                <X>194.9112</X>
+                <Y>239</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>55E180B88AEF4EBB95CEA30000F9B5AB</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>EDD1D2B18D30495CB57EA30000F9B5AB</EntityReference>
+                <X>480</X>
+                <Y>220</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>F3DEDDE0B0994F4B94B4A30000F9BCF0</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>F49E97A7B2284E409876A30000F9BCF0</EntityReference>
+                <X>672</X>
+                <Y>223</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>4F97BB954C354685AF65A30000F9CE97</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>0DB04BC876EF45A79A94A30000F9CE9C</EntityReference>
+                <X>841</X>
+                <Y>240</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>2EEF1990EB4042C69AC3A30000F9DCBA</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>04FA352DA0664AE09342A30000F9DCBA</EntityReference>
+                <X>620.511</X>
+                <Y>260.0135</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Left</LinkEndAnchor>
+                <LinkStartAnchor>Right</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>620.511</X>
+                    <Y>260.0135</Y>
+                  </Point>
+                  <Point>
+                    <X>646.0135</X>
+                    <Y>260.0135</Y>
+                  </Point>
+                  <Point>
+                    <X>646.0135</X>
+                    <Y>263.013458</Y>
+                  </Point>
+                  <Point>
+                    <X>671.516</X>
+                    <Y>263.013458</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>298BAE4F64DE46EF9008A30000F9E1B5</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>8895D0852D6447CD8BFCA30000F9E1B5</EntityReference>
+                <X>812.511</X>
+                <Y>260.007172</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Left</LinkEndAnchor>
+                <LinkStartAnchor>Right</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>812.511</X>
+                    <Y>263.013458</Y>
+                  </Point>
+                  <Point>
+                    <X>826.0088</X>
+                    <Y>263.013458</Y>
+                  </Point>
+                  <Point>
+                    <X>826.0088</X>
+                    <Y>260.007172</Y>
+                  </Point>
+                  <Point>
+                    <X>839.5066</X>
+                    <Y>260.007172</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>2B5CF9FA45274030A819A49600F94040</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>D8F9F078EC38436B8FE3A49600F94040</EntityReference>
+                <X>431.00058</X>
+                <Y>260.0135</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Left</LinkEndAnchor>
+                <LinkStartAnchor>Right</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>431.00058</X>
+                    <Y>263.013641</Y>
+                  </Point>
+                  <Point>
+                    <X>455.2583</X>
+                    <Y>263.013641</Y>
+                  </Point>
+                  <Point>
+                    <X>455.2583</X>
+                    <Y>260.0135</Y>
+                  </Point>
+                  <Point>
+                    <X>479.516</X>
+                    <Y>260.0135</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>EE540229314C46819F0BA49600FAA943</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>5464ADA2E62740BCBF2EA49600FAA943</EntityReference>
+                <X>290</X>
+                <Y>223</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>0764F9B8F617487CA9A4A49900AE9299</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>8D861E1FFECE43CBB5C7A49900AE929A</EntityReference>
+                <X>235.753159</X>
+                <Y>263.013641</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Left</LinkEndAnchor>
+                <LinkStartAnchor>Right</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>235.753159</X>
+                    <Y>263.768127</Y>
+                  </Point>
+                  <Point>
+                    <X>262.376251</X>
+                    <Y>263.768127</Y>
+                  </Point>
+                  <Point>
+                    <X>262.376251</X>
+                    <Y>263.013641</Y>
+                  </Point>
+                  <Point>
+                    <X>288.999329</X>
+                    <Y>263.013641</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+          </GraphicInfos>
+          <Name>Default</Name>
+        </Val>
+      </Item>
+    </Planes>
+  </GraphicInformations>
+  <Parameters>
+    <AuthorizationSchemaName>SubProcess_T</AuthorizationSchemaName>
+    <CategoryName>Default</CategoryName>
+    <Name>SendMailMessage</Name>
+  </Parameters>
+</ProcessModel>

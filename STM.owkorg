@@ -1,0 +1,322 @@
+﻿<OrganizationFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>STM</Name>
+  <ObjectType>OrganizationFile</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <Assignments />
+  <Blocks />
+  <GraphicInformations>
+    <Globals />
+    <Planes>
+      <Item>
+        <Key>diagramma</Key>
+        <Val i:type="GraphicOrganizationalPlane">
+          <GraphicInfos>
+            <Item>
+              <Key>D24ACDEB501E497A8C85A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>036E9F62DC964FC2831FA6AA00C15893</EntityReference>
+                <X>0.5</X>
+                <Y>0.5000038</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>ECA22BE2D6DD40019BC9A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>8A34B080297D4463B399A6AA00C25B2A</EntityReference>
+                <X>0.5</X>
+                <Y>89.5</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>4FCE62C335DA45E5869CA6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>36A8CA6C03D949999500A6AA00C18CBA</EntityReference>
+                <X>0.366989136</X>
+                <Y>196.500015</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>8971DA77A4B14095A396A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>F931E6F762B24A26BB7DA6AA00C1E655</EntityReference>
+                <X>0.5</X>
+                <Y>285.500031</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>DCAB0B921A714F33ACD1A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>8957840A19514B4AA94FA6AA00C196B2</EntityReference>
+                <X>-230.633041</X>
+                <Y>392.5001</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>6AD6D6CAB89F44A3A69DA6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>D5001CBD9A2A4C4CB377A6AA00C1A639</EntityReference>
+                <X>231.366974</X>
+                <Y>392.5001</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>024492C0B09D4EA18844A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>6EA207B82DC54360B948A6AA00C1AE82</EntityReference>
+                <X>0.366989136</X>
+                <Y>392.5001</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>0576FE67334740AD8CD9A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>CA6C3FD39A47458F9B5FA6AA00C220BA</EntityReference>
+                <X>-230.499969</X>
+                <Y>481.500122</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>C50F689FED684E66B56CA6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>416C28EEB71D4988832BA6AA00C23D18</EntityReference>
+                <X>231.500015</X>
+                <Y>481.500122</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+            <Item>
+              <Key>8AE74456682D4D0C9959A6AB00CA16A5</Key>
+              <Val i:type="GraphicOrganizationalNode">
+                <EntityReference>26F1827EA9114FC996D9A6AA00C24AC4</EntityReference>
+                <X>0.5000305</X>
+                <Y>481.500122</Y>
+                <AlignmentOnTree>Default</AlignmentOnTree>
+                <BackgroundColor>White</BackgroundColor>
+                <BorderColor i:nil="true" />
+                <FontColor>Black</FontColor>
+              </Val>
+            </Item>
+          </GraphicInfos>
+          <Name>diagramma</Name>
+          <Depth>0</Depth>
+          <Layout>Default</Layout>
+          <RootId />
+          <ShowFunctionalRelationship>true</ShowFunctionalRelationship>
+          <ShowIndexes>false</ShowIndexes>
+          <Style>PositionsUnitsPersons</Style>
+          <Template>basic</Template>
+        </Val>
+      </Item>
+    </Planes>
+  </GraphicInformations>
+  <NumberLevelsInPath>0</NumberLevelsInPath>
+  <Organization>
+    <Description i:nil="true" />
+    <Id>036E9F62DC964FC2831FA6AA00C15893</Id>
+    <Name i:nil="true" />
+    <ObjectType>Organization</ObjectType>
+    <RepositoryId i:nil="true" />
+    <Parent>
+      <ParentId />
+      <ParentType>Undefined</ParentType>
+    </Parent>
+    <Addresses xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <CustomizationReference />
+    <Name>STM</Name>
+  </Organization>
+  <PathIndicator>LeftToRight</PathIndicator>
+  <PathSeparator>/</PathSeparator>
+  <Positions>
+    <OrganizationalPositionResource>
+      <Description i:nil="true" />
+      <Id>F931E6F762B24A26BB7DA6AA00C1E655</Id>
+      <Name>Chief Sales Officer</Name>
+      <ObjectType>OrganizationalPosition</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>36A8CA6C03D949999500A6AA00C18CBA</ParentId>
+        <ParentType>OrganizationalUnit</ParentType>
+      </Parent>
+      <Initials>CSO</Initials>
+      <LocalName>Chief Sales Officer</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>PosizioneOrganizzativa_Position</CustomizationReference>
+    </OrganizationalPositionResource>
+    <OrganizationalPositionResource>
+      <Description i:nil="true" />
+      <Id>CA6C3FD39A47458F9B5FA6AA00C220BA</Id>
+      <Name>Chief Engineering Officer</Name>
+      <ObjectType>OrganizationalPosition</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>8957840A19514B4AA94FA6AA00C196B2</ParentId>
+        <ParentType>OrganizationalUnit</ParentType>
+      </Parent>
+      <Initials>CENO</Initials>
+      <LocalName>Chief Engineering Officer</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>PosizioneOrganizzativa_Position</CustomizationReference>
+    </OrganizationalPositionResource>
+    <OrganizationalPositionResource>
+      <Description i:nil="true" />
+      <Id>416C28EEB71D4988832BA6AA00C23D18</Id>
+      <Name>Chief Quality Officer</Name>
+      <ObjectType>OrganizationalPosition</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>D5001CBD9A2A4C4CB377A6AA00C1A639</ParentId>
+        <ParentType>OrganizationalUnit</ParentType>
+      </Parent>
+      <Initials>CQO</Initials>
+      <LocalName>Chief Quality Officer</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>PosizioneOrganizzativa_Position</CustomizationReference>
+    </OrganizationalPositionResource>
+    <OrganizationalPositionResource>
+      <Description i:nil="true" />
+      <Id>26F1827EA9114FC996D9A6AA00C24AC4</Id>
+      <Name>Chief Logistics Officer</Name>
+      <ObjectType>OrganizationalPosition</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>6EA207B82DC54360B948A6AA00C1AE82</ParentId>
+        <ParentType>OrganizationalUnit</ParentType>
+      </Parent>
+      <Initials>CLO</Initials>
+      <LocalName>Chief Logistics Officer</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>PosizioneOrganizzativa_Position</CustomizationReference>
+    </OrganizationalPositionResource>
+    <OrganizationalPositionResource>
+      <Description i:nil="true" />
+      <Id>8A34B080297D4463B399A6AA00C25B2A</Id>
+      <Name>Chief Executive Officer</Name>
+      <ObjectType>OrganizationalPosition</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>036E9F62DC964FC2831FA6AA00C15893</ParentId>
+        <ParentType>Organization</ParentType>
+      </Parent>
+      <Initials>CEO</Initials>
+      <LocalName>Chief Executive Officer</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>PosizioneOrganizzativa_Position</CustomizationReference>
+    </OrganizationalPositionResource>
+  </Positions>
+  <ShowOrganizationNameInPath>false</ShowOrganizationNameInPath>
+  <Units>
+    <OrganizationalUnitResource>
+      <Description i:nil="true" />
+      <Id>36A8CA6C03D949999500A6AA00C18CBA</Id>
+      <Name>Sales</Name>
+      <ObjectType>OrganizationalUnit</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>8A34B080297D4463B399A6AA00C25B2A</ParentId>
+        <ParentType>OrganizationalPosition</ParentType>
+      </Parent>
+      <BlockId />
+      <Initials>SA</Initials>
+      <LocalName>Sales</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>UnitaOrganizzativa_Unit</CustomizationReference>
+    </OrganizationalUnitResource>
+    <OrganizationalUnitResource>
+      <Description i:nil="true" />
+      <Id>8957840A19514B4AA94FA6AA00C196B2</Id>
+      <Name>Engineering</Name>
+      <ObjectType>OrganizationalUnit</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>F931E6F762B24A26BB7DA6AA00C1E655</ParentId>
+        <ParentType>OrganizationalPosition</ParentType>
+      </Parent>
+      <BlockId />
+      <Initials>EN</Initials>
+      <LocalName>Engineering</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>UnitaOrganizzativa_Unit</CustomizationReference>
+    </OrganizationalUnitResource>
+    <OrganizationalUnitResource>
+      <Description i:nil="true" />
+      <Id>D5001CBD9A2A4C4CB377A6AA00C1A639</Id>
+      <Name>Quality</Name>
+      <ObjectType>OrganizationalUnit</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>F931E6F762B24A26BB7DA6AA00C1E655</ParentId>
+        <ParentType>OrganizationalPosition</ParentType>
+      </Parent>
+      <BlockId />
+      <Initials>QA</Initials>
+      <LocalName>Quality</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>UnitaOrganizzativa_Unit</CustomizationReference>
+    </OrganizationalUnitResource>
+    <OrganizationalUnitResource>
+      <Description i:nil="true" />
+      <Id>6EA207B82DC54360B948A6AA00C1AE82</Id>
+      <Name>Logistics</Name>
+      <ObjectType>OrganizationalUnit</ObjectType>
+      <RepositoryId i:nil="true" />
+      <Parent>
+        <ParentId>F931E6F762B24A26BB7DA6AA00C1E655</ParentId>
+        <ParentType>OrganizationalPosition</ParentType>
+      </Parent>
+      <BlockId />
+      <Initials>LO</Initials>
+      <LocalName>Logistics</LocalName>
+      <OrganizationId>036E9F62DC964FC2831FA6AA00C15893</OrganizationId>
+      <Addresses xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <CustomizationReference>UnitaOrganizzativa_Unit</CustomizationReference>
+    </OrganizationalUnitResource>
+  </Units>
+</OrganizationFile>

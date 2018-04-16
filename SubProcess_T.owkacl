@@ -1,0 +1,65 @@
+﻿<AclModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description />
+  <DesignerVersion>16</DesignerVersion>
+  <Id>2C01ED8514DB4CEB84DAA59801010835</Id>
+  <Name>SubProcess_T</Name>
+  <ObjectType>AclModel</ObjectType>
+  <RepositoryId>808DB4B6235447FEB79BA59300DEF4C3</RepositoryId>
+  <Version>1</Version>
+  <AceList>
+    <Item>
+      <ContextCondition i:type="Filter">
+        <Code i:nil="true" />
+        <Complement i:nil="true" />
+        <Predicate>
+          <Type>BelongsToAnyIdentityRepository</Type>
+          <Value>True</Value>
+        </Predicate>
+        <Subject i:type="TypedSubject">
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>user</Name>
+            <Type i:type="InternalType">
+              <Type>Identity</Type>
+            </Type>
+            <Child i:nil="true" />
+          </RootPart>
+        </Subject>
+      </ContextCondition>
+      <Id>9AA76B1700174D69ABF6A34E00B462C5</Id>
+      <Permission>ReadOrganizationStructure UpdateOrganizationStructure ReadResource UpdateResource DeleteResource RecustomizeResource ConfigureResourcePermissions BrowseResource CreateOrganizationalAssignments</Permission>
+      <Name>Everyone</Name>
+    </Item>
+    <Item>
+      <ContextCondition i:type="Filter">
+        <Code i:nil="true" />
+        <Complement i:type="BaseReferenceExpression">
+          <Code>Automation</Code>
+          <Description />
+        </Complement>
+        <Predicate>
+          <Type>Is</Type>
+          <Value>True</Value>
+        </Predicate>
+        <Subject i:type="TypedSubject">
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>user</Name>
+            <Type i:type="InternalType">
+              <Type>Identity</Type>
+            </Type>
+            <Child i:nil="true" />
+          </RootPart>
+        </Subject>
+      </ContextCondition>
+      <Id>22202652B9324CDE814CA34E00B4BE1C</Id>
+      <Permission>CreateInstance</Permission>
+      <Name>Automation</Name>
+    </Item>
+  </AceList>
+  <BaseType>CustomType</BaseType>
+  <EmbeddedObjects />
+</AclModel>

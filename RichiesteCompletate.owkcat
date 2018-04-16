@@ -1,0 +1,561 @@
+﻿<CatalogModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>RichiesteCompletate</Name>
+  <ObjectType>CatalogModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <CatalogDefinition>
+    <Dictionary>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Name</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Oggetto</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Oggetto</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>String</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Note</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Note</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Memo</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Priority</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Priority</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>HumanTaskPriority</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>DataScadenza</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>DataScadenza</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Datetime</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Status</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>Status</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>HumanTaskStatus</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>RichiesteCompletate</Name>
+    <BaseType>ExtendedReference</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>RichiesteCompletate</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="CatalogLayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutColumns>
+            <Dictionary>
+              <Item>
+                <Key>Name</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Name</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Nome</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Name</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Oggetto</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Oggetto</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Oggetto</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Oggetto</Name>
+                          <Type i:type="InternalType">
+                            <Type>String</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Note</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Note</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Note</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Note</Name>
+                          <Type i:type="InternalType">
+                            <Type>Memo</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Priority</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Priority</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Priorità</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Priority</Name>
+                          <Type i:type="InternalType">
+                            <Type>HumanTaskPriority</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>DataScadenza</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>DataScadenza</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos>
+                      <Item>
+                        <Key>DateTimeGraphicInfo</Key>
+                        <Val i:type="DateTimeGraphicInfo">
+                          <HideDate>false</HideDate>
+                          <HideTime>true</HideTime>
+                          <TimeIncrement>15</TimeIncrement>
+                        </Val>
+                      </Item>
+                      <Item>
+                        <Key>FormatGraphicInfo</Key>
+                        <Val i:type="FormatGraphicInfo">
+                          <Currency i:nil="true" />
+                          <Pattern>dd/MM/yyyy</Pattern>
+                          <PhpPattern>d/m/Y</PhpPattern>
+                        </Val>
+                      </Item>
+                    </AdditionalGraphicInfos>
+                    <Caption>
+                      <Default>Data scadenza</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>DataScadenza</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>Status</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>Status</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Status</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>RichiesteCompletate</DefinitionName>
+                          <DefinitionReference>RichiesteCompletate</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>Status</Name>
+                          <Type i:type="InternalType">
+                            <Type>HumanTaskStatus</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutColumns>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+    <EntityType i:type="InternalType">
+      <Type>HumanTask</Type>
+    </EntityType>
+    <Filter i:type="Filter">
+      <Code i:nil="true" />
+      <Complement>
+        <Code>HumanTaskStatus.Completed</Code>
+        <Description />
+      </Complement>
+      <Predicate>
+        <Type>EqualsTo</Type>
+        <Value>True</Value>
+      </Predicate>
+      <Subject i:type="TypedSubject">
+        <Code />
+        <Description i:nil="true" />
+        <RootPart i:type="SubjectPartSimple">
+          <Name>item</Name>
+          <Type i:type="InternalType">
+            <Type>HumanTask</Type>
+          </Type>
+          <Child i:type="SubjectPartSimple">
+            <Name>Status</Name>
+            <Type i:type="InternalType">
+              <Type>HumanTaskStatus</Type>
+            </Type>
+            <Child i:nil="true" />
+          </Child>
+        </RootPart>
+      </Subject>
+    </Filter>
+    <OrderingCriteria />
+    <ProjectionMap>
+      <Item>
+        <Key>Name</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>EngineeringOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>EngineeringOfferRichiesta_HT</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Name</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Oggetto</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>EngineeringOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>EngineeringOfferRichiesta_HT</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Oggetto</Name>
+              <Type i:type="InternalType">
+                <Type>String</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Note</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>EngineeringOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>EngineeringOfferRichiesta_HT</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>Note</Name>
+              <Type i:type="InternalType">
+                <Type>Memo</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Priority</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>EngineeringOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>EngineeringOfferRichiesta_HT</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Priority</Name>
+              <Type i:type="InternalType">
+                <Type>HumanTaskPriority</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>DataScadenza</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>EngineeringOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>EngineeringOfferRichiesta_HT</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartCustomField">
+              <Name>DataScadenza</Name>
+              <Type i:type="InternalType">
+                <Type>Datetime</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>Status</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="InternalType">
+              <Type>HumanTask</Type>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>Status</Name>
+              <Type i:type="InternalType">
+                <Type>HumanTaskStatus</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+    </ProjectionMap>
+    <Version>0</Version>
+    <CustomTypeFieldDefinition />
+    <RefreshMinutes>0</RefreshMinutes>
+  </CatalogDefinition>
+  <EmbeddedObjects />
+  <Parameters>
+    <AuthorizationSchemaName>NoUsers_C</AuthorizationSchemaName>
+    <CategoryName>Attività di verifica</CategoryName>
+    <Name>Richieste completate</Name>
+  </Parameters>
+</CatalogModel>

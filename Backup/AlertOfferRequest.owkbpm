@@ -1,0 +1,2131 @@
+﻿<ProcessModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>12</DesignerVersion>
+  <Id>C304A0667C504DAD8BA6A6AA00E54E49</Id>
+  <Name>AlertOfferRequest</Name>
+  <ObjectType>ProcessModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <Definition>
+    <Description i:nil="true" />
+    <Id i:nil="true" />
+    <Name>AlertOfferRequest</Name>
+    <DataInputs>
+      <Dictionary>
+        <Item>
+          <Key>Resource_RichiestaOfferta</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>Resource_RichiestaOfferta</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+      </Dictionary>
+      <Description i:nil="true" />
+      <Name>F0AF45A10C7B46C9821EA6E900B40181</Name>
+    </DataInputs>
+    <DataOutputs>
+      <Dictionary>
+        <Item>
+          <Key>Message</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>Message</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>String</Type>
+            </Type>
+          </Val>
+        </Item>
+      </Dictionary>
+      <Description i:nil="true" />
+      <Name>E0E4CC8A5F3D4331B558A6E900B40181</Name>
+    </DataOutputs>
+    <SupportedInterfaceReferences xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Artifacts />
+    <CorrelationSubscriptons />
+    <FlowElements xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:anyType i:type="EndEvent">
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>F7BEB9B27CD34E4EAAC1A6E900B40181</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>068ED1E8E83B4C55BFBDA6E900B40181</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:nil="true" />
+        <Id>078947556CFA4BD9974EA6AA00E587B0</Id>
+        <Name i:nil="true" />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>2C65F937C1D44BEB9CDBA6E900B40181</Name>
+        </Variables>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="CallActivity">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>#processVariables.Fields['UnitReferenceList'][#activity.LoopCounter]</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>66DE8150BF4D4EF38826A6E900B40181</DefinitionName>
+                  <DefinitionReference>66DE8150BF4D4EF38826A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Input_UnitaOrganizzativa</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Resource_RichiestaOfferta</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>Richiesta_Data</DefinitionName>
+                    <DefinitionReference>Richiesta_Data</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>66DE8150BF4D4EF38826A6E900B40181</DefinitionName>
+                  <DefinitionReference>66DE8150BF4D4EF38826A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Input_ResourceRichiesta</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>Richiesta_Data</DefinitionName>
+                    <DefinitionReference>Richiesta_Data</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>Input_UnitaOrganizzativa</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>Input_UnitaOrganizzativa</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>Input_ResourceRichiesta</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>Input_ResourceRichiesta</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Data</DefinitionBaseType>
+                  <DefinitionName>Richiesta_Data</DefinitionName>
+                  <DefinitionReference>Richiesta_Data</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>66DE8150BF4D4EF38826A6E900B40181</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>58429ADD68B148E7A8FCA6E900B40181</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <Id>2CC4F70B7182446AB810A6AA01070CC2</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:type="MultiInstanceLoopCharacteristcs">
+          <AllBehaviourEvent i:nil="true" />
+          <Behaviour>None</Behaviour>
+          <CompletionCondition i:nil="true" />
+          <ComplexBehaviorDefinition i:nil="true" />
+          <IsSequential>false</IsSequential>
+          <LoopCardinality>
+            <Code>#processVariables.Fields['UnitReferenceList'].Count</Code>
+            <Description />
+          </LoopCardinality>
+          <OneBehaviourEvent i:nil="true" />
+        </LoopCharacteristics>
+        <Name>Unit Organizzation</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>42E7494F605E4185B98EA6E900B40181</Name>
+        </Variables>
+        <CallableElementReference>AssignOfferStaff</CallableElementReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ServiceTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Resource_RichiestaOfferta</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Data</DefinitionBaseType>
+                    <DefinitionName>Richiesta_Data</DefinitionName>
+                    <DefinitionReference>Richiesta_Data</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartSimple">
+                    <Name>Created</Name>
+                    <Type i:type="InternalType">
+                      <Type>Status</Type>
+                    </Type>
+                    <Child i:type="SubjectPartSimple">
+                      <Name>PositionReference</Name>
+                      <Type i:type="InternalType">
+                        <Type>Reference</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </Child>
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3C7FD6BB0B1943048793A6E900B40181</DefinitionName>
+                  <DefinitionReference>3C7FD6BB0B1943048793A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>organizationalNodeReference</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>true</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3C7FD6BB0B1943048793A6E900B40181</DefinitionName>
+                  <DefinitionReference>3C7FD6BB0B1943048793A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>includeAllLevels</Name>
+                  <Type i:type="InternalType">
+                    <Type>Boolean</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>serverAddress</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>serverAddress</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>token</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>token</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>organizationalNodeReference</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>organizationalNodeReference</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>includeAllLevels</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>includeAllLevels</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Boolean</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>3C7FD6BB0B1943048793A6E900B40181</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>A3187BA9567F4221B28CA6E900B40181</DefinitionName>
+                  <DefinitionReference>A3187BA9567F4221B28CA6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>returnValue</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomArrayField">
+                  <Name>UnitReferenceList</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>returnValue</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>true</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>returnValue</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>A3187BA9567F4221B28CA6E900B40181</Name>
+        </DataOutputs>
+        <Description>Gets the list of references to the identities that are subordinated to the given organizational node.</Description>
+        <Id>5F016378EC3D4E3D87EEA6AB00C64C87</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>Get Unità Organizzative</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>E4F893FE732746ED8164A6E900B40181</Name>
+        </Variables>
+        <OperationReference>
+          <Type>Undefined</Type>
+          <Url>JamioOrganization/GetUnitsReportingTo</Url>
+          <Name />
+        </OperationReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="StartEvent">
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>AB2B40EE7CE0455EBF58A6E900B4C021</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>A36F3471EEAA45518266A6E900B4C021</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:nil="true" />
+        <Id>5A0A0BAD66714EDB86A9A6E900B4C021</Id>
+        <Name>DEBUG|</Name>
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>044D94F1AFEF4347BCABA6E900B4C021</Name>
+        </Variables>
+        <IsInterrupting>true</IsInterrupting>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ExclusiveGateway">
+        <Description i:nil="true" />
+        <GatewayDirection>Unspecificed</GatewayDirection>
+        <Id>7A5498FE365A476F87B5A6E900B4E17B</Id>
+        <Name i:nil="true" />
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ExclusiveGateway">
+        <Description i:nil="true" />
+        <GatewayDirection>Unspecificed</GatewayDirection>
+        <Id>556CEEDFD1E84016BBB1A6E900B4E6E2</Id>
+        <Name i:nil="true" />
+      </d3p1:anyType>
+      <d3p1:anyType i:type="BusinessRuleTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Task</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>HumanTask</DefinitionBaseType>
+                    <DefinitionName>QualityOfferRichiesta_HT</DefinitionName>
+                    <DefinitionReference>QualityOfferRichiesta_HT</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>47FC1EAB89174067A1C5A6E900B805CD</DefinitionName>
+                  <DefinitionReference>47FC1EAB89174067A1C5A6E900B805CD</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Attività</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>HumanTask</DefinitionBaseType>
+                    <DefinitionName>QualityOfferRichiesta_HT</DefinitionName>
+                    <DefinitionReference>QualityOfferRichiesta_HT</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>Attività</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>Attività</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>HumanTask</DefinitionBaseType>
+                  <DefinitionName>QualityOfferRichiesta_HT</DefinitionName>
+                  <DefinitionReference>QualityOfferRichiesta_HT</DefinitionReference>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>47FC1EAB89174067A1C5A6E900B805CD</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>1256F4FA1DF54ABDB49EA6E900B805CD</DefinitionName>
+                  <DefinitionReference>1256F4FA1DF54ABDB49EA6E900B805CD</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>output_Message</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E0E4CC8A5F3D4331B558A6E900B40181</DefinitionName>
+                  <DefinitionReference>E0E4CC8A5F3D4331B558A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Message</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>output_Message</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>output_Message</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>1256F4FA1DF54ABDB49EA6E900B805CD</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <Id>99BF3C714B8144308FC0A6E900B805CD</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>Message Changes Offer Subject Vuoto</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>6263D079E7BA4111A596A6E900B805CD</Name>
+        </Variables>
+        <Implementation>
+          <Items>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>1256F4FA1DF54ABDB49EA6E900B805CD</DefinitionName>
+                        <DefinitionReference>1256F4FA1DF54ABDB49EA6E900B805CD</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>output_Message</Name>
+                        <Type i:type="InternalType">
+                          <Type>String</Type>
+                        </Type>
+                        <Child i:nil="true" />
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right>
+                  <Code>'Alert inviato' + ' ' + 'status richiesta : ' + #activityInput.Fields['Attività'].Status</Code>
+                  <Description />
+                </Right>
+              </Fact>
+            </Item>
+          </Items>
+          <Description i:nil="true" />
+          <Name i:nil="true" />
+        </Implementation>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="BusinessRuleTask">
+        <BoundaryEvents />
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>37F3ECF64FCA435CA400A6E900BB0EAB</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>9C651A9428974D1D9A86A6E900BB0EAB</DefinitionName>
+                  <DefinitionReference>9C651A9428974D1D9A86A6E900BB0EAB</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>output_Message</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E0E4CC8A5F3D4331B558A6E900B40181</DefinitionName>
+                  <DefinitionReference>E0E4CC8A5F3D4331B558A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Message</Name>
+                  <Type i:type="InternalType">
+                    <Type>String</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>output_Message</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>output_Message</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>9C651A9428974D1D9A86A6E900BB0EAB</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <Id>9CE839DEBEEA44B69597A6E900BB0EAB</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>Message Changes Offer Completato</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>2675849D263340A8B2A5A6E900BB0EAB</Name>
+        </Variables>
+        <Implementation>
+          <Items>
+            <Item i:type="SimpleRule">
+              <Fact i:type="Assignment">
+                <Scope>All</Scope>
+                <Description i:nil="true" />
+                <Subjects>
+                  <Subject i:type="TypedSubject">
+                    <Code />
+                    <Description i:nil="true" />
+                    <RootPart i:type="SubjectPartSimple">
+                      <Name>activityOutput</Name>
+                      <Type i:type="CustomType">
+                        <DefinitionBaseType>Dataset</DefinitionBaseType>
+                        <DefinitionName>9C651A9428974D1D9A86A6E900BB0EAB</DefinitionName>
+                        <DefinitionReference>9C651A9428974D1D9A86A6E900BB0EAB</DefinitionReference>
+                      </Type>
+                      <Child i:type="SubjectPartCustomField">
+                        <Name>output_Message</Name>
+                        <Type i:type="InternalType">
+                          <Type>String</Type>
+                        </Type>
+                        <Child i:nil="true" />
+                      </Child>
+                    </RootPart>
+                  </Subject>
+                </Subjects>
+                <Right>
+                  <Code>'Verifica già completata'</Code>
+                  <Description />
+                </Right>
+              </Fact>
+            </Item>
+          </Items>
+          <Description i:nil="true" />
+          <Name i:nil="true" />
+        </Implementation>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ServiceTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>Types.HumanTask</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>12F13393EE6A45A3B4B2A6E900D5CA25</DefinitionName>
+                  <DefinitionReference>12F13393EE6A45A3B4B2A6E900D5CA25</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>resourceType</Name>
+                  <Type i:type="InternalType">
+                    <Type>Types</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="BaseReferenceExpression">
+              <Code>AliasHT</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>12F13393EE6A45A3B4B2A6E900D5CA25</DefinitionName>
+                  <DefinitionReference>12F13393EE6A45A3B4B2A6E900D5CA25</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>catalogModelReference</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>serverAddress</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>serverAddress</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>token</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>token</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>tenantId</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>tenantId</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>resourceType</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>resourceType</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Types</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>catalogModelReference</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>catalogModelReference</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>searchParameters</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>searchParameters</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>SearchParametersVariable</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>12F13393EE6A45A3B4B2A6E900D5CA25</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>Reference(#activityOutput.Fields['returnValue'].Fields['ItemList'][0].Name,#activityOutput.Fields['returnValue'].Fields['ItemList'][0].Url)</Code>
+              <Description i:nil="true" />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>ReferenceAttivita</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>returnValue</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>returnValue</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Dataset</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>EF8D3D0966C5471DAB81A6E900D5CA25</Name>
+        </DataOutputs>
+        <Description>Gets the catalog for a given resource type by providing the reference to the model of the catalog resource.</Description>
+        <Id>ABD7A8817C994FC79521A6E900D5CA25</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>JamioCatalog.GetCatalogByModel</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>212134CDC1A848EF847EA6E900D5CA25</Name>
+        </Variables>
+        <OperationReference>
+          <Type>Undefined</Type>
+          <Url>JamioCatalog/GetCatalogByModel</Url>
+          <Name />
+        </OperationReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="IntermediateThrowEvent">
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right>
+              <Code>#processVariables.Fields['Task'].Status</Code>
+              <Description />
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>eventInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>92C651BAB79A434BB3CAA6E90104809F</DefinitionName>
+                  <DefinitionReference>92C651BAB79A434BB3CAA6E90104809F</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>message</Name>
+                  <Type i:type="InternalType">
+                    <Type>Notification</Type>
+                  </Type>
+                  <Child i:type="SubjectPartSimple">
+                    <Name>Message</Name>
+                    <Type i:type="InternalType">
+                      <Type>String</Type>
+                    </Type>
+                    <Child i:nil="true" />
+                  </Child>
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>toReference</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>toReference</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>message</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>message</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Notification</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>92C651BAB79A434BB3CAA6E90104809F</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>023D901C97DA4DD7A714A6E90104809F</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:type="MessageEventDefinition">
+          <Message i:nil="true" />
+          <Source>Alert</Source>
+          <Subject>Nome Attività</Subject>
+          <ToReference>Administrators</ToReference>
+        </EventDefinition>
+        <Id>862E5288785F4AD8871FA6E90104809F</Id>
+        <Name i:nil="true" />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>073161810B8E4152912FA6E90104809F</Name>
+        </Variables>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="ServiceTask">
+        <BoundaryEvents />
+        <DataInputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>ReferenceAttivita</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityInput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>3D69ABAD7F244311ACC7A6F700B5B338</DefinitionName>
+                  <DefinitionReference>3D69ABAD7F244311ACC7A6F700B5B338</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>resourceReference</Name>
+                  <Type i:type="InternalType">
+                    <Type>Reference</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataInputAssociations>
+        <DataInputs>
+          <Dictionary>
+            <Item>
+              <Key>serverAddress</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>serverAddress</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>token</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>token</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>String</Type>
+                </Type>
+              </Val>
+            </Item>
+            <Item>
+              <Key>resourceReference</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>resourceReference</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>Reference</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>3D69ABAD7F244311ACC7A6F700B5B338</Name>
+        </DataInputs>
+        <DataOutputAssociations>
+          <ProcessAssignment>
+            <Code i:nil="true" />
+            <Right i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>activityOutput</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>C5DCD5D752B3468DA8C7A6F700B5B338</DefinitionName>
+                  <DefinitionReference>C5DCD5D752B3468DA8C7A6F700B5B338</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>returnValue</Name>
+                  <Type i:type="InternalType">
+                    <Type>AnyType</Type>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Right>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>processVariables</Name>
+                <Type i:type="CustomType">
+                  <DefinitionBaseType>Dataset</DefinitionBaseType>
+                  <DefinitionName>E484BFCDBCE84030AD15A6E900B40181</DefinitionName>
+                  <DefinitionReference>E484BFCDBCE84030AD15A6E900B40181</DefinitionReference>
+                </Type>
+                <Child i:type="SubjectPartCustomField">
+                  <Name>Task</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>HumanTask</DefinitionBaseType>
+                    <DefinitionName>QualityOfferRichiesta_HT</DefinitionName>
+                    <DefinitionReference>QualityOfferRichiesta_HT</DefinitionReference>
+                  </Type>
+                  <Child i:nil="true" />
+                </Child>
+              </RootPart>
+            </Subject>
+            <Description i:nil="true" />
+          </ProcessAssignment>
+        </DataOutputAssociations>
+        <DataOutputs>
+          <Dictionary>
+            <Item>
+              <Key>returnValue</Key>
+              <Val>
+                <DefaultValueExpression i:nil="true" />
+                <DefaultValueReference i:nil="true" />
+                <Description i:nil="true" />
+                <Invalidable>false</Invalidable>
+                <IsArray>false</IsArray>
+                <IsUnique>false</IsUnique>
+                <Name>returnValue</Name>
+                <ReadOnly>false</ReadOnly>
+                <Required>false</Required>
+                <Type i:type="InternalType">
+                  <Type>AnyType</Type>
+                </Type>
+              </Val>
+            </Item>
+          </Dictionary>
+          <Description i:nil="true" />
+          <Name>C5DCD5D752B3468DA8C7A6F700B5B338</Name>
+        </DataOutputs>
+        <Description>Reads a resource.</Description>
+        <Id>64F54CD9E224438E8406A6F700B5B338</Id>
+        <IsForCompensation>false</IsForCompensation>
+        <LoopCharacteristics i:nil="true" />
+        <Name>ReadResource Task</Name>
+        <Resources />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>31C8FCBBFECB4AEDADE5A6F700B5B338</Name>
+        </Variables>
+        <OperationReference>
+          <Type>Undefined</Type>
+          <Url>JamioResource/ReadResource</Url>
+          <Name />
+        </OperationReference>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="StartEvent">
+        <DataInputAssociations />
+        <DataInputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>E2C4874F6D0F453D9BC6A6F700CCB232</Name>
+        </DataInputs>
+        <DataOutputAssociations />
+        <DataOutputs>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>7B86AE34C043402A9D57A6F700CCB232</Name>
+        </DataOutputs>
+        <Description i:nil="true" />
+        <EventDefinition i:type="TimerEventDefinition">
+          <RepeatCount>0</RepeatCount>
+          <RepeatInterval>PT0S</RepeatInterval>
+          <StartTime xmlns:d6p1="http://schemas.datacontract.org/2004/07/System">
+            <d6p1:DateTime>2019-12-31T23:00:00Z</d6p1:DateTime>
+            <d6p1:OffsetMinutes>60</d6p1:OffsetMinutes>
+          </StartTime>
+        </EventDefinition>
+        <Id>65A5E7B73FC8480B8B14A6F700CCB232</Id>
+        <Name i:nil="true" />
+        <Variables>
+          <Dictionary />
+          <Description i:nil="true" />
+          <Name>3CD8D6D7D79F4D8281C9A6F700CCB232</Name>
+        </Variables>
+        <IsInterrupting>true</IsInterrupting>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>FB98EA27A9EE45DF944CA6AA00E60D74</Id>
+        <Name i:nil="true" />
+        <SourceId>5A0A0BAD66714EDB86A9A6E900B4C021</SourceId>
+        <TargetId>7A5498FE365A476F87B5A6E900B4E17B</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>79A7F15351984842B908A6AA01072928</Id>
+        <Name i:nil="true" />
+        <SourceId>2CC4F70B7182446AB810A6AA01070CC2</SourceId>
+        <TargetId>9CE839DEBEEA44B69597A6E900BB0EAB</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>E9EA9510B1B144B2B7C1A6AB00C78AED</Id>
+        <Name i:nil="true" />
+        <SourceId>5F016378EC3D4E3D87EEA6AB00C64C87</SourceId>
+        <TargetId>2CC4F70B7182446AB810A6AA01070CC2</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>A0806DADF70B4FD28E5CA6CD00BEA9B0</Id>
+        <Name i:nil="true" />
+        <SourceId>9CE839DEBEEA44B69597A6E900BB0EAB</SourceId>
+        <TargetId>556CEEDFD1E84016BBB1A6E900B4E6E2</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>E1CE8C807EC54BD3B318A6E900B4FF71</Id>
+        <Name i:nil="true" />
+        <SourceId>556CEEDFD1E84016BBB1A6E900B4E6E2</SourceId>
+        <TargetId>078947556CFA4BD9974EA6AA00E587B0</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:type="FilterGroup">
+          <Code i:nil="true" />
+          <Filters>
+            <FilterBase i:type="Filter">
+              <Code i:nil="true" />
+              <Complement>
+                <Code>false</Code>
+                <Description />
+              </Complement>
+              <Predicate>
+                <Type>EqualsTo</Type>
+                <Value>True</Value>
+              </Predicate>
+              <Subject i:type="TypedSubject">
+                <Code />
+                <Description />
+                <RootPart i:type="SubjectPartSimple">
+                  <Name>processInput</Name>
+                  <Type i:type="CustomType">
+                    <DefinitionBaseType>Dataset</DefinitionBaseType>
+                    <DefinitionName>F0AF45A10C7B46C9821EA6E900B40181</DefinitionName>
+                    <DefinitionReference>F0AF45A10C7B46C9821EA6E900B40181</DefinitionReference>
+                  </Type>
+                  <Child i:type="SubjectPartCustomField">
+                    <Name>Resource_RichiestaOfferta</Name>
+                    <Type i:type="CustomType">
+                      <DefinitionBaseType>Data</DefinitionBaseType>
+                      <DefinitionName>Richiesta_Data</DefinitionName>
+                      <DefinitionReference>Richiesta_Data</DefinitionReference>
+                    </Type>
+                    <Child i:type="SubjectPartCustomField">
+                      <Name>FlagCompleted</Name>
+                      <Type i:type="InternalType">
+                        <Type>Boolean</Type>
+                      </Type>
+                      <Child i:nil="true" />
+                    </Child>
+                  </Child>
+                </RootPart>
+              </Subject>
+            </FilterBase>
+          </Filters>
+          <Operator>And</Operator>
+        </ConditionExpression>
+        <Description i:nil="true" />
+        <Id>A2D788FA0C1149EA8FB8A6E900B501DE</Id>
+        <Name i:nil="true" />
+        <SourceId>7A5498FE365A476F87B5A6E900B4E17B</SourceId>
+        <TargetId>ABD7A8817C994FC79521A6E900D5CA25</TargetId>
+        <Type>Conditioned</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>9CEDDF3787BE429BA812A6E900B50B08</Id>
+        <Name i:nil="true" />
+        <SourceId>7A5498FE365A476F87B5A6E900B4E17B</SourceId>
+        <TargetId>9CE839DEBEEA44B69597A6E900BB0EAB</TargetId>
+        <Type>Default</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>24DF8789471F4C02917CA6E900B81B90</Id>
+        <Name i:nil="true" />
+        <SourceId>99BF3C714B8144308FC0A6E900B805CD</SourceId>
+        <TargetId>556CEEDFD1E84016BBB1A6E900B4E6E2</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>93E19C4BFAD14DE097DEA6E900D5D4BA</Id>
+        <Name i:nil="true" />
+        <SourceId>ABD7A8817C994FC79521A6E900D5CA25</SourceId>
+        <TargetId>64F54CD9E224438E8406A6F700B5B338</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>1568CB52AFFE4723A41EA6E901048431</Id>
+        <Name i:nil="true" />
+        <SourceId>862E5288785F4AD8871FA6E90104809F</SourceId>
+        <TargetId>99BF3C714B8144308FC0A6E900B805CD</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>DF21A9E749CE41C88A1AA6F700B5BDDD</Id>
+        <Name i:nil="true" />
+        <SourceId>64F54CD9E224438E8406A6F700B5B338</SourceId>
+        <TargetId>862E5288785F4AD8871FA6E90104809F</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="SequenceFlow">
+        <ConditionExpression i:nil="true" />
+        <Description i:nil="true" />
+        <Id>EDBD5880DD9F40F88F18A6F700CCBA5C</Id>
+        <Name i:nil="true" />
+        <SourceId>65A5E7B73FC8480B8B14A6F700CCB232</SourceId>
+        <TargetId>5F016378EC3D4E3D87EEA6AB00C64C87</TargetId>
+        <Type>Normal</Type>
+      </d3p1:anyType>
+    </FlowElements>
+    <IsExecutable>true</IsExecutable>
+    <LaneSets />
+    <Resources />
+    <Variables>
+      <Dictionary>
+        <Item>
+          <Key>Resource_RichiestaOfferta</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>Resource_RichiestaOfferta</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>Data</DefinitionBaseType>
+              <DefinitionName>Richiesta_Data</DefinitionName>
+              <DefinitionReference>Richiesta_Data</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>UnitReferenceList</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>true</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>UnitReferenceList</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Reference</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>ReferenceAttivita</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>ReferenceAttivita</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="InternalType">
+              <Type>Reference</Type>
+            </Type>
+          </Val>
+        </Item>
+        <Item>
+          <Key>Task</Key>
+          <Val>
+            <DefaultValueExpression i:nil="true" />
+            <DefaultValueReference i:nil="true" />
+            <Description i:nil="true" />
+            <Invalidable>false</Invalidable>
+            <IsArray>false</IsArray>
+            <IsUnique>false</IsUnique>
+            <Name>Task</Name>
+            <ReadOnly>false</ReadOnly>
+            <Required>false</Required>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>HumanTask</DefinitionBaseType>
+              <DefinitionName>QualityOfferRichiesta_HT</DefinitionName>
+              <DefinitionReference>QualityOfferRichiesta_HT</DefinitionReference>
+            </Type>
+          </Val>
+        </Item>
+      </Dictionary>
+      <Description i:nil="true" />
+      <Name>E484BFCDBCE84030AD15A6E900B40181</Name>
+    </Variables>
+  </Definition>
+  <EmbeddedObjects />
+  <GraphicInformations>
+    <Globals />
+    <Planes>
+      <Item>
+        <Key>Default</Key>
+        <Val>
+          <GraphicInfos>
+            <Item>
+              <Key>4B73C83E3D1B452EA1F3A6AA00E587B0</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>078947556CFA4BD9974EA6AA00E587B0</EntityReference>
+                <X>390</X>
+                <Y>570</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>323CE05FA2E6417D9CB8A6AA00E60D1B</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>FB98EA27A9EE45DF944CA6AA00E60D74</EntityReference>
+                <X>410</X>
+                <Y>20.2857113</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Automatic</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.097534</X>
+                    <Y>20.2857113</Y>
+                  </Point>
+                  <Point>
+                    <X>410.097534</X>
+                    <Y>29.5714378</Y>
+                  </Point>
+                  <Point>
+                    <X>410</X>
+                    <Y>29.5714378</Y>
+                  </Point>
+                  <Point>
+                    <X>410</X>
+                    <Y>38.8571625</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>8BE6EA4886B845AEA69DA6AA01070CC2</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>2CC4F70B7182446AB810A6AA01070CC2</EntityReference>
+                <X>80</X>
+                <Y>270</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>744559703A8741D1AF36A6AA01072928</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>79A7F15351984842B908A6AA01072928</EntityReference>
+                <X>149.999985</X>
+                <Y>351.015961</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>149.999985</X>
+                    <Y>351.015961</Y>
+                  </Point>
+                  <Point>
+                    <X>149.999985</X>
+                    <Y>370.264465</Y>
+                  </Point>
+                  <Point>
+                    <X>240.013489</X>
+                    <Y>370.264465</Y>
+                  </Point>
+                  <Point>
+                    <X>240.013489</X>
+                    <Y>389.513</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>EACA0BEFAF60480198E5A6AB00C64DFE</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>5F016378EC3D4E3D87EEA6AB00C64C87</EntityReference>
+                <X>80</X>
+                <Y>150</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>B75FA6F53A9E49C19516A6AB00C78AED</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>E9EA9510B1B144B2B7C1A6AB00C78AED</EntityReference>
+                <X>149.999985</X>
+                <Y>230.513962</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>150.013458</X>
+                    <Y>230.513962</Y>
+                  </Point>
+                  <Point>
+                    <X>150.013458</X>
+                    <Y>249.762634</Y>
+                  </Point>
+                  <Point>
+                    <X>149.999985</X>
+                    <Y>249.762634</Y>
+                  </Point>
+                  <Point>
+                    <X>149.999985</X>
+                    <Y>269.011322</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>405725C885D74785925AA6CD00BEA9B0</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>A0806DADF70B4FD28E5CA6CD00BEA9B0</EntityReference>
+                <X>240.013489</X>
+                <Y>470.514</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Automatic</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>240.013489</X>
+                    <Y>470.514</Y>
+                  </Point>
+                  <Point>
+                    <X>240.013489</X>
+                    <Y>530</Y>
+                  </Point>
+                  <Point>
+                    <X>388.857147</X>
+                    <Y>530</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>2B5D207B0D064B6588E1A6E900B4C021</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>5A0A0BAD66714EDB86A9A6E900B4C021</EntityReference>
+                <X>390</X>
+                <Y>-30</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>F4239F993BCB4402A561A6E900B4E17B</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>7A5498FE365A476F87B5A6E900B4E17B</EntityReference>
+                <X>390</X>
+                <Y>40.0000267</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>23DAA139B97F4E68BDA4A6E900B4E6E2</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>556CEEDFD1E84016BBB1A6E900B4E6E2</EntityReference>
+                <X>390</X>
+                <Y>510</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>0549D3BC47CB4D36BB4CA6E900B4FF71</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>E1CE8C807EC54BD3B318A6E900B4FF71</EntityReference>
+                <X>410.003937</X>
+                <Y>551.138855</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Shape</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.003937</X>
+                    <Y>551.138855</Y>
+                  </Point>
+                  <Point>
+                    <X>410.003937</X>
+                    <Y>559.8227</Y>
+                  </Point>
+                  <Point>
+                    <X>410.007172</X>
+                    <Y>559.8227</Y>
+                  </Point>
+                  <Point>
+                    <X>410.007172</X>
+                    <Y>568.506531</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>E53D27BE9B51402BAFBAA6E900B501DE</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>A2D788FA0C1149EA8FB8A6E900B501DE</EntityReference>
+                <X>410.00412</X>
+                <Y>81.1387558</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Shape</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.00412</X>
+                    <Y>81.1387558</Y>
+                  </Point>
+                  <Point>
+                    <X>410.00412</X>
+                    <Y>105.325867</Y>
+                  </Point>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>105.325867</Y>
+                  </Point>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>129.512985</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>A8CF4B16D318468BA803A6E900B50B08</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>9CEDDF3787BE429BA812A6E900B50B08</EntityReference>
+                <X>269.6235</X>
+                <Y>74.82657</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>TopMiddleRight</LinkEndAnchor>
+                <LinkStartAnchor>Shape</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>403.683716</X>
+                    <Y>74.82657</Y>
+                  </Point>
+                  <Point>
+                    <X>403.683716</X>
+                    <Y>232.169785</Y>
+                  </Point>
+                  <Point>
+                    <X>269.6235</X>
+                    <Y>232.169785</Y>
+                  </Point>
+                  <Point>
+                    <X>269.6235</X>
+                    <Y>389.513</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>3B233BDC3CB74AA5B5DBA6E900B811F8</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>99BF3C714B8144308FC0A6E900B805CD</EntityReference>
+                <X>340</X>
+                <Y>410</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>D3E9BD0EDD44462CA9BCA6E900B81B90</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>24DF8789471F4C02917CA6E900B81B90</EntityReference>
+                <X>409.999969</X>
+                <Y>490.514</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Automatic</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.0135</X>
+                    <Y>490.514</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0135</X>
+                    <Y>499.685547</Y>
+                  </Point>
+                  <Point>
+                    <X>409.999969</X>
+                    <Y>499.685547</Y>
+                  </Point>
+                  <Point>
+                    <X>409.999969</X>
+                    <Y>508.857117</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>5693AC5143EF47F29F2DA6E900BB2921</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>9CE839DEBEEA44B69597A6E900BB0EAB</EntityReference>
+                <X>170</X>
+                <Y>390</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>7507FAA27F8746BF8873A6E900D5CA21</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>ABD7A8817C994FC79521A6E900D5CA25</EntityReference>
+                <X>340</X>
+                <Y>130</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>5B41370E728B40C7A5C3A6E900D5D4BA</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>93E19C4BFAD14DE097DEA6E900D5D4BA</EntityReference>
+                <X>410.013519</X>
+                <Y>210.513977</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>210.513977</Y>
+                  </Point>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>239.512985</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>4BAEBE03273C4E56AC97A6E90104809F</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>862E5288785F4AD8871FA6E90104809F</EntityReference>
+                <X>390</X>
+                <Y>340</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>706D96B2C28D491F9B71A6E901048431</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>1568CB52AFFE4723A41EA6E901048431</EntityReference>
+                <X>410.0069</X>
+                <Y>380.7531</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.0069</X>
+                    <Y>380.7531</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0069</X>
+                    <Y>395.133057</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0135</X>
+                    <Y>395.133057</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0135</X>
+                    <Y>409.51297</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>D4B5E70C09964823BBAEA6F700B5B336</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>64F54CD9E224438E8406A6F700B5B338</EntityReference>
+                <X>340</X>
+                <Y>240</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>58428522EA644862845AA6F700B5BDDC</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>DF21A9E749CE41C88A1AA6F700B5BDDD</EntityReference>
+                <X>410.0069</X>
+                <Y>320.513977</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>320.513977</Y>
+                  </Point>
+                  <Point>
+                    <X>410.013519</X>
+                    <Y>329.887329</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0069</X>
+                    <Y>329.887329</Y>
+                  </Point>
+                  <Point>
+                    <X>410.0069</X>
+                    <Y>339.2607</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+            <Item>
+              <Key>E5ED28C090B241DC9E4AA6F700CCB22C</Key>
+              <Val i:type="GraphicProcessDefinition">
+                <EntityReference>65A5E7B73FC8480B8B14A6F700CCB232</EntityReference>
+                <X>130</X>
+                <Y>80</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+              </Val>
+            </Item>
+            <Item>
+              <Key>902B1147AC5A4EFABE05A6F700CCBA5A</Key>
+              <Val i:type="GraphicProcessLink">
+                <EntityReference>EDBD5880DD9F40F88F18A6F700CCBA5C</EntityReference>
+                <X>150.006912</X>
+                <Y>120.753128</Y>
+                <Height>0</Height>
+                <Width>0</Width>
+                <FreeHand>false</FreeHand>
+                <LinkEndAnchor>Top</LinkEndAnchor>
+                <LinkStartAnchor>Bottom</LinkStartAnchor>
+                <Points>
+                  <Point>
+                    <X>150.006912</X>
+                    <Y>120.753128</Y>
+                  </Point>
+                  <Point>
+                    <X>150.006912</X>
+                    <Y>135.133057</Y>
+                  </Point>
+                  <Point>
+                    <X>150.013458</X>
+                    <Y>135.133057</Y>
+                  </Point>
+                  <Point>
+                    <X>150.013458</X>
+                    <Y>149.512985</Y>
+                  </Point>
+                </Points>
+                <Text i:nil="true" />
+              </Val>
+            </Item>
+          </GraphicInfos>
+          <Name>Default</Name>
+        </Val>
+      </Item>
+    </Planes>
+  </GraphicInformations>
+  <Parameters>
+    <AuthorizationSchemaName>SubProcess_T</AuthorizationSchemaName>
+    <CategoryName>Default</CategoryName>
+    <Name>AlertOfferRequest</Name>
+  </Parameters>
+</ProcessModel>

@@ -1,0 +1,401 @@
+﻿<CatalogModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>Ruoli</Name>
+  <ObjectType>CatalogModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <CatalogDefinition>
+    <Dictionary>
+      <Item>
+        <Key>PositionReference</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>PositionReference</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>IdentityReference</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>IdentityReference</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Reference</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>StartDate</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>StartDate</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Datetime</Type>
+          </Type>
+        </Val>
+      </Item>
+      <Item>
+        <Key>EndDate</Key>
+        <Val>
+          <DefaultValueExpression i:nil="true" />
+          <DefaultValueReference i:nil="true" />
+          <Description i:nil="true" />
+          <Invalidable>false</Invalidable>
+          <IsArray>false</IsArray>
+          <IsUnique>false</IsUnique>
+          <IsUpgradable>false</IsUpgradable>
+          <Name>EndDate</Name>
+          <ReadOnly>false</ReadOnly>
+          <Required>false</Required>
+          <Type i:type="InternalType">
+            <Type>Datetime</Type>
+          </Type>
+        </Val>
+      </Item>
+    </Dictionary>
+    <Description i:nil="true" />
+    <Name>Ruoli</Name>
+    <BaseType>ExtendedReference</BaseType>
+    <Behaviour>
+      <Items />
+      <Description i:nil="true" />
+      <Name i:nil="true" />
+    </Behaviour>
+    <DefaultLayout>Layout</DefaultLayout>
+    <Id>Ruoli</Id>
+    <LayoutDefinitions>
+      <Item>
+        <Key>Layout</Key>
+        <Val i:type="CatalogLayoutDefinition">
+          <Description i:nil="true" />
+          <Name>Layout</Name>
+          <TagList i:nil="true" />
+          <LayoutColumns>
+            <Dictionary>
+              <Item>
+                <Key>PositionReference</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>PositionReference</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Posizione</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Ruoli</DefinitionName>
+                          <DefinitionReference>Ruoli</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>PositionReference</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>IdentityReference</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>IdentityReference</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos />
+                    <Caption>
+                      <Default>Identità</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Ruoli</DefinitionName>
+                          <DefinitionReference>Ruoli</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>IdentityReference</Name>
+                          <Type i:type="InternalType">
+                            <Type>Reference</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>StartDate</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>StartDate</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos>
+                      <Item>
+                        <Key>DateTimeGraphicInfo</Key>
+                        <Val i:type="DateTimeGraphicInfo">
+                          <HideDate>false</HideDate>
+                          <HideTime>true</HideTime>
+                          <TimeIncrement>15</TimeIncrement>
+                        </Val>
+                      </Item>
+                      <Item>
+                        <Key>FormatGraphicInfo</Key>
+                        <Val i:type="FormatGraphicInfo">
+                          <Currency i:nil="true" />
+                          <Pattern>dd/MM/yyyy</Pattern>
+                          <PhpPattern>d/m/Y</PhpPattern>
+                        </Val>
+                      </Item>
+                    </AdditionalGraphicInfos>
+                    <Caption>
+                      <Default>Da</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Ruoli</DefinitionName>
+                          <DefinitionReference>Ruoli</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>StartDate</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+              <Item>
+                <Key>EndDate</Key>
+                <Val>
+                  <Description i:nil="true" />
+                  <Name>EndDate</Name>
+                  <GraphicInfo>
+                    <AdditionalGraphicInfos>
+                      <Item>
+                        <Key>DateTimeGraphicInfo</Key>
+                        <Val i:type="DateTimeGraphicInfo">
+                          <HideDate>false</HideDate>
+                          <HideTime>true</HideTime>
+                          <TimeIncrement>15</TimeIncrement>
+                        </Val>
+                      </Item>
+                      <Item>
+                        <Key>FormatGraphicInfo</Key>
+                        <Val i:type="FormatGraphicInfo">
+                          <Currency i:nil="true" />
+                          <Pattern>dd/MM/yyyy</Pattern>
+                          <PhpPattern>d/m/Y</PhpPattern>
+                        </Val>
+                      </Item>
+                    </AdditionalGraphicInfos>
+                    <Caption>
+                      <Default>A</Default>
+                      <Others />
+                    </Caption>
+                    <Hidden>false</Hidden>
+                  </GraphicInfo>
+                  <LogicInfo>
+                    <AdditionalLogicInfos />
+                    <DataSource i:type="TypedSubject">
+                      <Code />
+                      <Description i:nil="true" />
+                      <RootPart i:type="SubjectPartSimple">
+                        <Name>data</Name>
+                        <Type i:type="CustomType">
+                          <DefinitionBaseType>ExtendedReference</DefinitionBaseType>
+                          <DefinitionName>Ruoli</DefinitionName>
+                          <DefinitionReference>Ruoli</DefinitionReference>
+                        </Type>
+                        <Child i:type="SubjectPartCustomField">
+                          <Name>EndDate</Name>
+                          <Type i:type="InternalType">
+                            <Type>Datetime</Type>
+                          </Type>
+                          <Child i:nil="true" />
+                        </Child>
+                      </RootPart>
+                    </DataSource>
+                  </LogicInfo>
+                </Val>
+              </Item>
+            </Dictionary>
+          </LayoutColumns>
+        </Val>
+      </Item>
+    </LayoutDefinitions>
+    <RelatedCatalogs />
+    <MappingDefinitions />
+    <CustomActions />
+    <EntityType i:type="CustomType">
+      <DefinitionBaseType>OrganizationalAssignment</DefinitionBaseType>
+      <DefinitionName>Incarico_Assignment</DefinitionName>
+      <DefinitionReference>Incarico_Assignment</DefinitionReference>
+    </EntityType>
+    <Filter i:nil="true" />
+    <OrderingCriteria />
+    <ProjectionMap>
+      <Item>
+        <Key>PositionReference</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>OrganizationalAssignment</DefinitionBaseType>
+              <DefinitionName>Incarico_Assignment</DefinitionName>
+              <DefinitionReference>Incarico_Assignment</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>PositionReference</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>IdentityReference</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>OrganizationalAssignment</DefinitionBaseType>
+              <DefinitionName>Incarico_Assignment</DefinitionName>
+              <DefinitionReference>Incarico_Assignment</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>IdentityReference</Name>
+              <Type i:type="InternalType">
+                <Type>Reference</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>StartDate</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>OrganizationalAssignment</DefinitionBaseType>
+              <DefinitionName>Incarico_Assignment</DefinitionName>
+              <DefinitionReference>Incarico_Assignment</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>StartDate</Name>
+              <Type i:type="InternalType">
+                <Type>Datetime</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+      <Item>
+        <Key>EndDate</Key>
+        <Val>
+          <Code />
+          <Description i:nil="true" />
+          <RootPart i:type="SubjectPartSimple">
+            <Name>item</Name>
+            <Type i:type="CustomType">
+              <DefinitionBaseType>OrganizationalAssignment</DefinitionBaseType>
+              <DefinitionName>Incarico_Assignment</DefinitionName>
+              <DefinitionReference>Incarico_Assignment</DefinitionReference>
+            </Type>
+            <Child i:type="SubjectPartSimple">
+              <Name>EndDate</Name>
+              <Type i:type="InternalType">
+                <Type>Datetime</Type>
+              </Type>
+              <Child i:nil="true" />
+            </Child>
+          </RootPart>
+        </Val>
+      </Item>
+    </ProjectionMap>
+    <Version>0</Version>
+    <CustomTypeFieldDefinition />
+    <RefreshMinutes>0</RefreshMinutes>
+  </CatalogDefinition>
+  <EmbeddedObjects />
+  <Parameters>
+    <AuthorizationSchemaName>Users_C</AuthorizationSchemaName>
+    <CategoryName>Amministrazione</CategoryName>
+    <Name>Assegnazioni aziendali</Name>
+  </Parameters>
+</CatalogModel>

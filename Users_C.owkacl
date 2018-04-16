@@ -1,0 +1,69 @@
+﻿<AclModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openworkbpm.com/schema">
+  <Definitions />
+  <Description i:nil="true" />
+  <DesignerVersion>16</DesignerVersion>
+  <Id i:nil="true" />
+  <Name>Users_C</Name>
+  <ObjectType>AclModel</ObjectType>
+  <RepositoryId i:nil="true" />
+  <Version>0</Version>
+  <AceList>
+    <Item>
+      <ContextCondition i:type="FilterGroup">
+        <Code i:nil="true" />
+        <Filters>
+          <FilterBase i:type="Filter">
+            <Code i:nil="true" />
+            <Complement i:type="BaseReferenceExpression">
+              <Code>Administrator</Code>
+              <Description />
+            </Complement>
+            <Predicate>
+              <Type>BelongsToGroup</Type>
+              <Value>True</Value>
+            </Predicate>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>user</Name>
+                <Type i:type="InternalType">
+                  <Type>Identity</Type>
+                </Type>
+                <Child i:nil="true" />
+              </RootPart>
+            </Subject>
+          </FilterBase>
+          <FilterBase i:type="Filter">
+            <Code i:nil="true" />
+            <Complement i:type="BaseReferenceExpression">
+              <Code>PowerUsers</Code>
+              <Description />
+            </Complement>
+            <Predicate>
+              <Type>BelongsToGroup</Type>
+              <Value>True</Value>
+            </Predicate>
+            <Subject i:type="TypedSubject">
+              <Code />
+              <Description i:nil="true" />
+              <RootPart i:type="SubjectPartSimple">
+                <Name>user</Name>
+                <Type i:type="InternalType">
+                  <Type>Identity</Type>
+                </Type>
+                <Child i:nil="true" />
+              </RootPart>
+            </Subject>
+          </FilterBase>
+        </Filters>
+        <Operator>Or</Operator>
+      </ContextCondition>
+      <Id>C5C9E94B7746428599E4A6A500F640AC</Id>
+      <Permission>ReadResource NavigateResource</Permission>
+      <Name>Everyone</Name>
+    </Item>
+  </AceList>
+  <BaseType>Catalog</BaseType>
+  <EmbeddedObjects />
+</AclModel>
